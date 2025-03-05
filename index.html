@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well differentiated papillary mesothelial tumor: a new name and new problems</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 100vw;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .title-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .authors {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .bilingual-content {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        
+        .english, .japanese {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .english {
+            border-right: 1px solid #ecf0f1;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        
+        .figure-caption {
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        /* Interactive translation styles */
+        .phrase {
+            display: inline;
+            padding: 2px 0;
+            border-radius: 2px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+        
+        .phrase:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        .highlight-en {
+            background-color: #fff9c4; /* Light yellow */
+        }
+        
+        .highlight-ja {
+            background-color: #ffe0b2; /* Light orange */
+        }
+        
+        /* Instructions panel */
+        .instructions {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .instructions ul {
+            padding-left: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .bilingual-content {
+                flex-direction: column;
+            }
+            
+            .english {
+                border-right: none;
+                border-bottom: 1px solid #ecf0f1;
+            }
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up connections between phrases
+            const allPhrases = document.querySelectorAll('.phrase');
+            
+            allPhrases.forEach(phrase => {
+                phrase.addEventListener('mouseenter', function() {
+                    const id = this.getAttribute('data-id');
+                    const lang = this.getAttribute('data-lang');
+                    
+                    // Find corresponding phrase
+                    const correspondingPhrase = document.querySelector(`.phrase[data-id="${id}"][data-lang="${lang === 'en' ? 'ja' : 'en'}"]`);
+                    
+                    if (lang === 'en') {
+                        correspondingPhrase.classList.add('highlight-ja');
+                    } else {
+                        correspondingPhrase.classList.add('highlight-en');
+                    }
+                });
+                
+                phrase.addEventListener('mouseleave', function() {
+                    const id = this.getAttribute('data-id');
+                    const lang = this.getAttribute('data-lang');
+                    
+                    // Find corresponding phrase
+                    const correspondingPhrase = document.querySelector(`.phrase[data-id="${id}"][data-lang="${lang === 'en' ? 'ja' : 'en'}"]`);
+                    
+                    if (lang === 'en') {
+                        correspondingPhrase.classList.remove('highlight-ja');
+                    } else {
+                        correspondingPhrase.classList.remove('highlight-en');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h3>Interactive Bilingual Reading Guide</h3>
+            <ul>
+                <li>Hover over any English text to highlight the corresponding Japanese translation in orange</li>
+                <li>Hover over any Japanese text to highlight the corresponding English original in yellow</li>
+                <li>Each sentence is broken down into smaller phrases for precise matching</li>
+            </ul>
+        </div>
+        
+        <div class="title-section">
+            <h1>Well differentiated papillary mesothelial tumor: a new name and new problems</h1>
+            <h1>高分化型乳頭状中皮腫瘍：新しい名称と新たな問題</h1>
+            <div class="authors">Andrew Churg・Francoise Galateau-Salle</div>
+        </div>
+        
+        <div class="section">
+            <h2>Abstract / 要旨</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p1-1" data-lang="en">Well-differentiated papillary mesothelial tumor (WDPMT, formerly called well-differentiated papillary mesothelioma)</span> 
+                        <span class="phrase" data-id="p1-2" data-lang="en">is a morphologically distinctive lesion</span> 
+                        <span class="phrase" data-id="p1-3" data-lang="en">composed of expansile papillae with a myxoid core</span> 
+                        <span class="phrase" data-id="p1-4" data-lang="en">covered by a single layer of generally bland mesothelial cells.</span> 
+                        <span class="phrase" data-id="p1-5" data-lang="en">Whether some WDPMT are precursors of invasive mesothelioma is uncertain,</span> 
+                        <span class="phrase" data-id="p1-6" data-lang="en">and this question is confounded by shallow biopsies of ordinary diffuse mesotheliomas</span> 
+                        <span class="phrase" data-id="p1-7" data-lang="en">that have superficial areas resembling WDPMT</span> 
+                        <span class="phrase" data-id="p1-8" data-lang="en">as well as by misinterpretation of some cases of mesothelioma in situ.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p2-1" data-lang="en">Genetic analyses on a very small number of published cases of peritoneal WDPMT</span> 
+                        <span class="phrase" data-id="p2-2" data-lang="en">have shown a variety of mutations/copy number losses</span> 
+                        <span class="phrase" data-id="p2-3" data-lang="en">that do not overlap at all with those</span> 
+                        <span class="phrase" data-id="p2-4" data-lang="en">that are found recurrently in invasive mesotheliomas.</span> 
+                        <span class="phrase" data-id="p2-5" data-lang="en">The newly described entity of mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p2-6" data-lang="en">usually appears as a single layer of mesothelial cells</span> 
+                        <span class="phrase" data-id="p2-7" data-lang="en">that have lost BAP1 by immunostaining,</span> 
+                        <span class="phrase" data-id="p2-8" data-lang="en">but sometimes is papillary and produces a morphologic mimic of WDPMT.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p3-1" data-lang="en">We propose that, at least in the peritoneal cavity where most WDPMT occur,</span> 
+                        <span class="phrase" data-id="p3-2" data-lang="en">there are two morphologically identical but functionally distinct lesions:</span> 
+                        <span class="phrase" data-id="p3-3" data-lang="en">one is true WDPMT, a process that is probably benign,</span> 
+                        <span class="phrase" data-id="p3-4" data-lang="en">and the other is papillary mesothelioma in situ with the configuration of WDPMT.</span> 
+                        <span class="phrase" data-id="p3-5" data-lang="en">For that reason immunostaining for BAP1,</span> 
+                        <span class="phrase" data-id="p3-6" data-lang="en">and if necessary MTAP or CDKN2A FISH,</span> 
+                        <span class="phrase" data-id="p3-7" data-lang="en">should always be performed on cases with the appearance of WDPMT.</span> 
+                        <span class="phrase" data-id="p3-8" data-lang="en">It is possible, but speculative,</span> 
+                        <span class="phrase" data-id="p3-9" data-lang="en">that the small number of reports in the literature</span> 
+                        <span class="phrase" data-id="p3-10" data-lang="en">which describe invasive mesothelioma arising from WDMPT</span> 
+                        <span class="phrase" data-id="p3-11" data-lang="en">are actually describing invasive mesothelioma arising from mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p3-12" data-lang="en">that looks like WDPMT.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p1-1" data-lang="ja">高分化型乳頭状中皮腫瘍（WDPMT、以前は高分化型乳頭状中皮腫と呼ばれていた）は、</span>
+                        <span class="phrase" data-id="p1-2" data-lang="ja">形態学的に特徴的な病変であり、</span>
+                        <span class="phrase" data-id="p1-3" data-lang="ja">粘液様のコアを持つ拡張性乳頭状構造が、</span>
+                        <span class="phrase" data-id="p1-4" data-lang="ja">一般的に単調な中皮細胞の単層で覆われている。</span>
+                        <span class="phrase" data-id="p1-5" data-lang="ja">一部のWDPMTが浸潤性中皮腫の前駆病変であるかどうかは不確かであり、</span>
+                        <span class="phrase" data-id="p1-6" data-lang="ja">この問題は、通常の広範性中皮腫の浅い生検や、</span>
+                        <span class="phrase" data-id="p1-7" data-lang="ja">WDPMTに類似した表層領域を持つもの</span>
+                        <span class="phrase" data-id="p1-8" data-lang="ja">や、一部の中皮腫上皮内病変（in situ）の誤った解釈により複雑化している。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p2-1" data-lang="ja">腹膜WDPMTの発表された極めて少数の症例における遺伝子解析では、</span>
+                        <span class="phrase" data-id="p2-2" data-lang="ja">様々な変異/コピー数損失が示されており、</span>
+                        <span class="phrase" data-id="p2-3" data-lang="ja">これらは、</span>
+                        <span class="phrase" data-id="p2-4" data-lang="ja">浸潤性中皮腫で繰り返し発見されるものとまったく重複しない。</span>
+                        <span class="phrase" data-id="p2-5" data-lang="ja">最近記述された中皮腫上皮内病変（in situ）は</span>
+                        <span class="phrase" data-id="p2-6" data-lang="ja">通常、中皮細胞の単層として現れ、</span>
+                        <span class="phrase" data-id="p2-7" data-lang="ja">免疫染色によってBAP1を喪失しているが、</span>
+                        <span class="phrase" data-id="p2-8" data-lang="ja">時に乳頭状となりWDPMTの形態学的模倣を生じることがある。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p3-1" data-lang="ja">私たちは、少なくともWDPMTのほとんどが発生する腹膜腔において、</span>
+                        <span class="phrase" data-id="p3-2" data-lang="ja">形態学的には同一であるが機能的に異なる2つの病変が存在すると提案する：</span>
+                        <span class="phrase" data-id="p3-3" data-lang="ja">1つは真のWDPMTであり、おそらく良性のプロセスであり、</span>
+                        <span class="phrase" data-id="p3-4" data-lang="ja">もう1つはWDPMTの構成を持つ乳頭状中皮腫上皮内病変である。</span>
+                        <span class="phrase" data-id="p3-5" data-lang="ja">そのため、BAP1の免疫染色、</span>
+                        <span class="phrase" data-id="p3-6" data-lang="ja">必要に応じてMTAPまたはCDKN2A FISHを</span>
+                        <span class="phrase" data-id="p3-7" data-lang="ja">WDPMTの外観を持つ症例では常に実施すべきである。</span>
+                        <span class="phrase" data-id="p3-8" data-lang="ja">可能性はあるが推測的なのは、</span>
+                        <span class="phrase" data-id="p3-9" data-lang="ja">文献中の少数の報告が</span>
+                        <span class="phrase" data-id="p3-10" data-lang="ja">WDPMTから発生した浸潤性中皮腫を記述しているが、</span>
+                        <span class="phrase" data-id="p3-11" data-lang="ja">実際には中皮腫上皮内病変から発生した浸潤性中皮腫を記述している</span>
+                        <span class="phrase" data-id="p3-12" data-lang="ja">可能性があり、それはWDPMTのように見える。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Introduction / はじめに</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p4-1" data-lang="en">Well-differentiated papillary mesothelial tumor (WDPMT),</span> 
+                        <span class="phrase" data-id="p4-2" data-lang="en">formerly known as well-differentiated papillary mesothelioma,</span> 
+                        <span class="phrase" data-id="p4-3" data-lang="en">is a histologically distinctive mesothelial tumor</span> 
+                        <span class="phrase" data-id="p4-4" data-lang="en">of uncertain malignant potential</span> 
+                        <span class="phrase" data-id="p4-5" data-lang="en">found in the pleura, peritoneum, and tunica vaginalis.</span> 
+                        <span class="phrase" data-id="p4-6" data-lang="en">Both the latest Thoracic Tumors and Female Genital Tumors WHO books</span> 
+                        <span class="phrase" data-id="p4-7" data-lang="en">recommend using WDPMT</span> 
+                        <span class="phrase" data-id="p4-8" data-lang="en">rather than well-differentiated papillary mesothelioma</span> 
+                        <span class="phrase" data-id="p4-9" data-lang="en">as a diagnostic term</span> 
+                        <span class="phrase" data-id="p4-10" data-lang="en">because surgeons and oncologists frequently view</span> 
+                        <span class="phrase" data-id="p4-11" data-lang="en">the "mesothelioma" part of "well-differentiated papillary mesothelioma"</span> 
+                        <span class="phrase" data-id="p4-12" data-lang="en">as an indication that these are overtly malignant neoplasms</span> 
+                        <span class="phrase" data-id="p4-13" data-lang="en">that should be treated in the same fashion</span> 
+                        <span class="phrase" data-id="p4-14" data-lang="en">as ordinary invasive diffuse mesotheliomas (MM)</span> 
+                        <span class="phrase" data-id="p4-15" data-lang="en">(for example, ref. 3).</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p5-1" data-lang="en">However, changing the nomenclature</span> 
+                        <span class="phrase" data-id="p5-2" data-lang="en">only partially addresses the clinical problem,</span> 
+                        <span class="phrase" data-id="p5-3" data-lang="en">because morphologic overlaps with invasive mesotheliomas,</span> 
+                        <span class="phrase" data-id="p5-4" data-lang="en">the significance of an invasive component in WDPMT,</span> 
+                        <span class="phrase" data-id="p5-5" data-lang="en">genetic separation from invasive mesotheliomas,</span> 
+                        <span class="phrase" data-id="p5-6" data-lang="en">the relationship of WDPMT to the newly described entity of mesothelioma in situ,</span> 
+                        <span class="phrase" data-id="p5-7" data-lang="en">and, most important, how WDPMT behave</span> 
+                        <span class="phrase" data-id="p5-8" data-lang="en">remain unresolved questions.</span> 
+                        <span class="phrase" data-id="p5-9" data-lang="en">This article will briefly highlight these issues</span> 
+                        <span class="phrase" data-id="p5-10" data-lang="en">and recommend some approaches for pathologists.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p4-1" data-lang="ja">高分化型乳頭状中皮腫瘍（WDPMT）は、</span>
+                        <span class="phrase" data-id="p4-2" data-lang="ja">以前は高分化型乳頭状中皮腫として知られていた</span>
+                        <span class="phrase" data-id="p4-3" data-lang="ja">組織学的に特徴的な中皮腫瘍であり、</span>
+                        <span class="phrase" data-id="p4-4" data-lang="ja">悪性度が不確かな</span>
+                        <span class="phrase" data-id="p4-5" data-lang="ja">胸膜、腹膜、精巣鞘膜に見られる腫瘍である。</span>
+                        <span class="phrase" data-id="p4-6" data-lang="ja">最新の胸部腫瘍および女性生殖器腫瘍に関するWHO書籍では、</span>
+                        <span class="phrase" data-id="p4-7" data-lang="ja">WDPMTを使用することを推奨している</span>
+                        <span class="phrase" data-id="p4-8" data-lang="ja">高分化型乳頭状中皮腫よりも</span>
+                        <span class="phrase" data-id="p4-9" data-lang="ja">診断用語として、</span>
+                        <span class="phrase" data-id="p4-10" data-lang="ja">外科医や腫瘍専門医が頻繁に見なすため</span>
+                        <span class="phrase" data-id="p4-11" data-lang="ja">「高分化型乳頭状中皮腫」の「中皮腫」の部分を</span>
+                        <span class="phrase" data-id="p4-12" data-lang="ja">明らかな悪性腫瘍の指標として</span>
+                        <span class="phrase" data-id="p4-13" data-lang="ja">同様に治療すべき</span>
+                        <span class="phrase" data-id="p4-14" data-lang="ja">通常の浸潤性びまん性中皮腫（MM）と</span>
+                        <span class="phrase" data-id="p4-15" data-lang="ja">（例えば、参考文献3）。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p5-1" data-lang="ja">しかし、命名法の変更だけでは</span>
+                        <span class="phrase" data-id="p5-2" data-lang="ja">臨床的問題に部分的にしか対処できない。</span>
+                        <span class="phrase" data-id="p5-3" data-lang="ja">なぜなら、浸潤性中皮腫との形態学的重複、</span>
+                        <span class="phrase" data-id="p5-4" data-lang="ja">WDPMTにおける浸潤性成分の意義、</span>
+                        <span class="phrase" data-id="p5-5" data-lang="ja">浸潤性中皮腫からの遺伝的分離、</span>
+                        <span class="phrase" data-id="p5-6" data-lang="ja">WDPMTと最近記述された中皮腫上皮内病変との関係、</span>
+                        <span class="phrase" data-id="p5-7" data-lang="ja">そして最も重要なこととして、WDPMTがどのように振る舞うか</span>
+                        <span class="phrase" data-id="p5-8" data-lang="ja">という未解決の問題が残っているからである。</span>
+                        <span class="phrase" data-id="p5-9" data-lang="ja">本論文ではこれらの問題を簡潔に強調し、</span>
+                        <span class="phrase" data-id="p5-10" data-lang="ja">病理医のためのいくつかのアプローチを推奨する。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Clinical and gross pathologic findings / 臨床的および肉眼的病理所見</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p6-1" data-lang="en">The largest individual WDPMT series</span> 
+                        <span class="phrase" data-id="p6-2" data-lang="en">comes from Sun et al.</span> 
+                        <span class="phrase" data-id="p6-3" data-lang="en">who published 75 cases of their own</span> 
+                        <span class="phrase" data-id="p6-4" data-lang="en">and found a total of 180 cases in the literature as of 2019;</span> 
+                        <span class="phrase" data-id="p6-5" data-lang="en">of these 135 were peritoneal,</span> 
+                        <span class="phrase" data-id="p6-6" data-lang="en">37 pleural, 6 in the tunica vaginalis,</span> 
+                        <span class="phrase" data-id="p6-7" data-lang="en">and 2 in hernia sacs.</span> 
+                        <span class="phrase" data-id="p6-8" data-lang="en">In the same year Vogin et al. reported</span> 
+                        <span class="phrase" data-id="p6-9" data-lang="en">another 56 peritoneal cases (without pathologic details),</span> 
+                        <span class="phrase" data-id="p6-10" data-lang="en">although 9 of these were described as having "fatty infiltration"</span> 
+                        <span class="phrase" data-id="p6-11" data-lang="en">raising a suspicion that they represent misdiagnosed ordinary invasive MM.</span> 
+                        <span class="phrase" data-id="p6-12" data-lang="en">In the summary prepared by Sun et al.,</span> 
+                        <span class="phrase" data-id="p6-13" data-lang="en">peritoneal cases in women outnumbered those in men by 6:1,</span> 
+                        <span class="phrase" data-id="p6-14" data-lang="en">whereas pleural cases showed a roughly equal female:male distribution.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p7-1" data-lang="en">Clinically, pleural cases generally are symptomatic</span> 
+                        <span class="phrase" data-id="p7-2" data-lang="en">and are associated with a pleural effusion;</span> 
+                        <span class="phrase" data-id="p7-3" data-lang="en">at thoracoscopy there typically are multiple small nodules</span> 
+                        <span class="phrase" data-id="p7-4" data-lang="en">over the affected pleura.</span> 
+                        <span class="phrase" data-id="p7-5" data-lang="en">In contrast, in the peritoneal cavity</span> 
+                        <span class="phrase" data-id="p7-6" data-lang="en">WDPMT is usually found incidentally</span> 
+                        <span class="phrase" data-id="p7-7" data-lang="en">during surgery for another process.</span> 
+                        <span class="phrase" data-id="p7-8" data-lang="en">Only a very small fraction of patients</span> 
+                        <span class="phrase" data-id="p7-9" data-lang="en">present with abdominal pain or ascites</span> 
+                        <span class="phrase" data-id="p7-10" data-lang="en">and are found to have WDPMT as the cause.</span> 
+                        <span class="phrase" data-id="p7-11" data-lang="en">Such patients sometimes have bowel wall or mesenteric thickening on imaging.</span> 
+                        <span class="phrase" data-id="p7-12" data-lang="en">In a minority of cases</span> 
+                        <span class="phrase" data-id="p7-13" data-lang="en">peritoneal WDPMT are associated with</span> 
+                        <span class="phrase" data-id="p7-14" data-lang="en">multicystic mesotheliomas, adenomatoid tumors, and endometriosis.</span> 
+                        <span class="phrase" data-id="p7-15" data-lang="en">On direct examination,</span> 
+                        <span class="phrase" data-id="p7-16" data-lang="en">peritoneal cases may have single nodules,</span> 
+                        <span class="phrase" data-id="p7-17" data-lang="en">a few nodules, or occasionally innumerable nodules.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p6-1" data-lang="ja">最大規模のWDPMT症例シリーズは</span>
+                        <span class="phrase" data-id="p6-2" data-lang="ja">Sunらによるもので、</span>
+                        <span class="phrase" data-id="p6-3" data-lang="ja">彼らは自身の75例を発表し、</span>
+                        <span class="phrase" data-id="p6-4" data-lang="ja">2019年時点で文献中に合計180例を見出した。</span>
+                        <span class="phrase" data-id="p6-5" data-lang="ja">そのうち135例が腹膜、</span>
+                        <span class="phrase" data-id="p6-6" data-lang="ja">37例が胸膜、6例が精巣鞘膜、</span>
+                        <span class="phrase" data-id="p6-7" data-lang="ja">2例がヘルニア嚢に発生したものだった。</span>
+                        <span class="phrase" data-id="p6-8" data-lang="ja">同年、Voginらは報告した</span>
+                        <span class="phrase" data-id="p6-9" data-lang="ja">別の56例の腹膜症例を（病理学的詳細なし）、</span>
+                        <span class="phrase" data-id="p6-10" data-lang="ja">そのうち9例は「脂肪浸潤」があると記述され、</span>
+                        <span class="phrase" data-id="p6-11" data-lang="ja">誤診された通常の浸潤性MMである疑いが生じた。</span>
+                        <span class="phrase" data-id="p6-12" data-lang="ja">Sunらによって準備された要約では、</span>
+                        <span class="phrase" data-id="p6-13" data-lang="ja">女性の腹膜症例は男性の6倍であったのに対し、</span>
+                        <span class="phrase" data-id="p6-14" data-lang="ja">胸膜症例ではほぼ同じ女性：男性比率を示した。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p7-1" data-lang="ja">臨床的に、胸膜症例は一般的に症状があり、</span>
+                        <span class="phrase" data-id="p7-2" data-lang="ja">胸水を伴う。</span>
+                        <span class="phrase" data-id="p7-3" data-lang="ja">胸腔鏡検査では、通常、多数の小結節がある</span>
+                        <span class="phrase" data-id="p7-4" data-lang="ja">罹患した胸膜に。</span>
+                        <span class="phrase" data-id="p7-5" data-lang="ja">対照的に、腹膜腔では</span>
+                        <span class="phrase" data-id="p7-6" data-lang="ja">WDPMTは通常、偶然発見される</span>
+                        <span class="phrase" data-id="p7-7" data-lang="ja">別のプロセスのための手術中に。</span>
+                        <span class="phrase" data-id="p7-8" data-lang="ja">患者のごくわずかな割合だけが</span>
+                        <span class="phrase" data-id="p7-9" data-lang="ja">腹痛や腹水を呈し、</span>
+                        <span class="phrase" data-id="p7-10" data-lang="ja">その原因としてWDPMTが見つかる。</span>
+                        <span class="phrase" data-id="p7-11" data-lang="ja">このような患者は、画像検査で腸壁や腸間膜の肥厚を示すことがある。</span>
+                        <span class="phrase" data-id="p7-12" data-lang="ja">少数例では、</span>
+                        <span class="phrase" data-id="p7-13" data-lang="ja">腹膜WDPMTは関連している</span>
+                        <span class="phrase" data-id="p7-14" data-lang="ja">多嚢胞性中皮腫、腺腫様腫瘍、子宮内膜症と。</span>
+                        <span class="phrase" data-id="p7-15" data-lang="ja">直接検査では、</span>
+                        <span class="phrase" data-id="p7-16" data-lang="ja">腹膜症例は単一の結節、</span>
+                        <span class="phrase" data-id="p7-17" data-lang="ja">いくつかの結節、または時には無数の結節を有することがある。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Microscopic findings / 顕微鏡的所見</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p8-1" data-lang="en">WDPMT is typically composed of papillae</span> 
+                        <span class="phrase" data-id="p8-2" data-lang="en">with expansile myxoid cores</span> 
+                        <span class="phrase" data-id="p8-3" data-lang="en">covered by a single layer of generally bland,</span> 
+                        <span class="phrase" data-id="p8-4" data-lang="en">flattened to cuboidal mesothelial cells (Fig. 1).</span> 
+                        <span class="phrase" data-id="p8-5" data-lang="en">Sometimes the expansile papillary stroma of WDPMT</span> 
+                        <span class="phrase" data-id="p8-6" data-lang="en">is fibrotic/hyalinized,</span> 
+                        <span class="phrase" data-id="p8-7" data-lang="en">presumably a finding in old lesions.</span> 
+                        <span class="phrase" data-id="p8-8" data-lang="en">WDPMT stain with traditional mesothelial markers</span> 
+                        <span class="phrase" data-id="p8-9" data-lang="en">such as calretinin, WT-1, cytokeratin 5/6, and D2-40,</span> 
+                        <span class="phrase" data-id="p8-10" data-lang="en">and should be negative with traditional carcinoma markers.</span> 
+                        <span class="phrase" data-id="p8-11" data-lang="en">An important pitfall to note is that PAX-8,</span> 
+                        <span class="phrase" data-id="p8-12" data-lang="en">a marker frequently positive in ovarian and other gynecologic tumors,</span> 
+                        <span class="phrase" data-id="p8-13" data-lang="en">is frequently positive in WDPMT,</span> 
+                        <span class="phrase" data-id="p8-14" data-lang="en">typically in peritoneal but occasionally in pleural lesions.</span> 
+                        <span class="phrase" data-id="p8-15" data-lang="en">PAX-8 positivity was observed in 94% of WDPMT in the series of Sun et al.</span> 
+                        <span class="phrase" data-id="p8-16" data-lang="en">and 61% of WDPMT in the series of Xing et al.).</span> 
+                        <span class="phrase" data-id="p8-17" data-lang="en">These numbers suggest that PAX-8 positivity in WDPMT</span> 
+                        <span class="phrase" data-id="p8-18" data-lang="en">is more frequent than in MM,</span> 
+                        <span class="phrase" data-id="p8-19" data-lang="en">although in our experience PAX-8 staining</span> 
+                        <span class="phrase" data-id="p8-20" data-lang="en">of both WDPMT and peritoneal mesotheliomas</span> 
+                        <span class="phrase" data-id="p8-21" data-lang="en">is dependent on antibody clone and antibody type</span> 
+                        <span class="phrase" data-id="p8-22" data-lang="en">(polyclonal stains more frequently than monoclonal).</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p9-1" data-lang="en">Another marker</span> 
+                        <span class="phrase" data-id="p9-2" data-lang="en">that has sometimes been proposed as positive in WDPMT</span> 
+                        <span class="phrase" data-id="p9-3" data-lang="en">but negative in mesotheliomas</span> 
+                        <span class="phrase" data-id="p9-4" data-lang="en">is L1CAM (CD171).</span> 
+                        <span class="phrase" data-id="p9-5" data-lang="en">However, Inaguma et al.</span> 
+                        <span class="phrase" data-id="p9-6" data-lang="en">reported positive L1CAM staining in 70% of mesotheliomas</span> 
+                        <span class="phrase" data-id="p9-7" data-lang="en">and Itami et al. in 53% of mesotheliomas,</span> 
+                        <span class="phrase" data-id="p9-8" data-lang="en">so L1CAM probably has little diagnostic value in this setting.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p10-1" data-lang="en">While the appearance of WDPMT is characteristic,</span> 
+                        <span class="phrase" data-id="p10-2" data-lang="en">there are nonetheless three important microscopic confounders.</span> 
+                        <span class="phrase" data-id="p10-3" data-lang="en">One is a superficial sample of an ordinary invasive diffuse mesothelioma;</span> 
+                        <span class="phrase" data-id="p10-4" data-lang="en">MM sometimes have papillary areas near free surfaces</span> 
+                        <span class="phrase" data-id="p10-5" data-lang="en">and such areas can closely mimic WDPMT (Fig. 2).</span> 
+                        <span class="phrase" data-id="p10-6" data-lang="en">Cytologic detail can be helpful:</span> 
+                        <span class="phrase" data-id="p10-7" data-lang="en">prominent nucleoli and, particularly, cytologic pleomorphism</span> 
+                        <span class="phrase" data-id="p10-8" data-lang="en">should raise a suspicion of invasive mesothelioma rather than WDPMT,</span> 
+                        <span class="phrase" data-id="p10-9" data-lang="en">although prominent nucleoli can, rarely,</span> 
+                        <span class="phrase" data-id="p10-10" data-lang="en">be seen in tumors that are (apparently) WDPMT.</span> 
+                        <span class="phrase" data-id="p10-11" data-lang="en">The operator's description or CT scan reports</span> 
+                        <span class="phrase" data-id="p10-12" data-lang="en">may be informative if there is unequivocal evidence of malignancy.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p11-1" data-lang="en">A second confounder is ovarian type serous tumors,</span> 
+                        <span class="phrase" data-id="p11-2" data-lang="en">including ovarian serous surface papillomas,</span> 
+                        <span class="phrase" data-id="p11-3" data-lang="en">serous borderline tumors, and, occasionally,</span> 
+                        <span class="phrase" data-id="p11-4" data-lang="en">low grade serous carcinomas,</span> 
+                        <span class="phrase" data-id="p11-5" data-lang="en">the vast majority in the peritoneum cavity</span> 
+                        <span class="phrase" data-id="p11-6" data-lang="en">but rarely intratesticular/paratesticular.</span> 
+                        <span class="phrase" data-id="p11-7" data-lang="en">All of these lesions can have a papillary structure</span> 
+                        <span class="phrase" data-id="p11-8" data-lang="en">that mimics WDPMT,</span> 
+                        <span class="phrase" data-id="p11-9" data-lang="en">but typically have columnar cells</span> 
+                        <span class="phrase" data-id="p11-10" data-lang="en">with considerable cytologic atypia</span> 
+                        <span class="phrase" data-id="p11-11" data-lang="en">in the borderline and low grade serous carcinomas.</span> 
+                        <span class="phrase" data-id="p11-12" data-lang="en">Most important, they stain strongly</span> 
+                        <span class="phrase" data-id="p11-13" data-lang="en">with broad spectrum carcinoma markers</span> 
+                        <span class="phrase" data-id="p11-14" data-lang="en">such as MOC-31, claudin-4, and BerEP4.</span> 
+                        <span class="phrase" data-id="p11-15" data-lang="en">They are usually calretinin negative</span> 
+                        <span class="phrase" data-id="p11-16" data-lang="en">but WT-1 and PAX-8 positive.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p12-1" data-lang="en">The third, and crucial, confounder</span> 
+                        <span class="phrase" data-id="p12-2" data-lang="en">is mesothelioma in situ,</span> 
+                        <span class="phrase" data-id="p12-3" data-lang="en">which can take on the microscopic appearance of WDPMT</span> 
+                        <span class="phrase" data-id="p12-4" data-lang="en">(see section 5 below)</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p8-1" data-lang="ja">WDPMTは典型的に、乳頭状構造から構成されており、</span>
+                        <span class="phrase" data-id="p8-2" data-lang="ja">拡張性粘液様コアを持ち、</span>
+                        <span class="phrase" data-id="p8-3" data-lang="ja">一般的に単調で</span>
+                        <span class="phrase" data-id="p8-4" data-lang="ja">扁平から立方体状の中皮細胞の単層で覆われている（図1）。</span>
+                        <span class="phrase" data-id="p8-5" data-lang="ja">時に、WDPMTの拡張性乳頭状間質は</span>
+                        <span class="phrase" data-id="p8-6" data-lang="ja">線維化/硝子化しており、</span>
+                        <span class="phrase" data-id="p8-7" data-lang="ja">これはおそらく古い病変での所見である。</span>
+                        <span class="phrase" data-id="p8-8" data-lang="ja">WDPMTは従来の中皮マーカーで染色され、</span>
+                        <span class="phrase" data-id="p8-9" data-lang="ja">カルレチニン、WT-1、サイトケラチン5/6、D2-40などで、</span>
+                        <span class="phrase" data-id="p8-10" data-lang="ja">従来の癌マーカーでは陰性であるべきである。</span>
+                        <span class="phrase" data-id="p8-11" data-lang="ja">注意すべき重要な落とし穴は、PAX-8、</span>
+                        <span class="phrase" data-id="p8-12" data-lang="ja">卵巣および他の婦人科腫瘍で頻繁に陽性であるマーカーが、</span>
+                        <span class="phrase" data-id="p8-13" data-lang="ja">WDPMTでも頻繁に陽性であることで、</span>
+                        <span class="phrase" data-id="p8-14" data-lang="ja">通常は腹膜病変だが時に胸膜病変でも見られる。</span>
+                        <span class="phrase" data-id="p8-15" data-lang="ja">PAX-8陽性はSunらのシリーズでは94％のWDPMTで観察され、</span>
+                        <span class="phrase" data-id="p8-16" data-lang="ja">Xingらのシリーズでは61％のWDPMTで観察された。</span>
+                        <span class="phrase" data-id="p8-17" data-lang="ja">これらの数字は、WDPMTにおけるPAX-8陽性が</span>
+                        <span class="phrase" data-id="p8-18" data-lang="ja">MMよりも頻繁であることを示唆しているが、</span>
+                        <span class="phrase" data-id="p8-19" data-lang="ja">我々の経験では、PAX-8染色は</span>
+                        <span class="phrase" data-id="p8-20" data-lang="ja">WDPMTおよび腹膜中皮腫の両方において</span>
+                        <span class="phrase" data-id="p8-21" data-lang="ja">抗体クローンと抗体タイプに依存する</span>
+                        <span class="phrase" data-id="p8-22" data-lang="ja">（ポリクローナルはモノクローナルよりも頻繁に染色される）。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p9-1" data-lang="ja">別のマーカーで、</span>
+                        <span class="phrase" data-id="p9-2" data-lang="ja">WDPMTでは陽性だが</span>
+                        <span class="phrase" data-id="p9-3" data-lang="ja">中皮腫では陰性として時々提案されてきたのは</span>
+                        <span class="phrase" data-id="p9-4" data-lang="ja">L1CAM（CD171）である。</span>
+                        <span class="phrase" data-id="p9-5" data-lang="ja">しかし、稲熊らは</span>
+                        <span class="phrase" data-id="p9-6" data-lang="ja">70％の中皮腫でL1CAM陽性染色を報告し、</span>
+                        <span class="phrase" data-id="p9-7" data-lang="ja">伊丹らは53％の中皮腫でL1CAM陽性染色を報告しており、</span>
+                        <span class="phrase" data-id="p9-8" data-lang="ja">そのためL1CAMはこの設定ではほとんど診断的価値がないだろう。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p10-1" data-lang="ja">WDPMTの外観は特徴的であるが、</span>
+                        <span class="phrase" data-id="p10-2" data-lang="ja">それでも3つの重要な顕微鏡的交絡因子がある。</span>
+                        <span class="phrase" data-id="p10-3" data-lang="ja">1つは通常の浸潤性びまん性中皮腫の表層サンプルである。</span>
+                        <span class="phrase" data-id="p10-4" data-lang="ja">MMは時に自由表面近くに乳頭状領域を持ち、</span>
+                        <span class="phrase" data-id="p10-5" data-lang="ja">そのような領域はWDPMTを密接に模倣することがある（図2）。</span>
+                        <span class="phrase" data-id="p10-6" data-lang="ja">細胞学的詳細が役立つことがある：</span>
+                        <span class="phrase" data-id="p10-7" data-lang="ja">著明な核小体、特に細胞学的多形性は</span>
+                        <span class="phrase" data-id="p10-8" data-lang="ja">WDPMTよりも浸潤性中皮腫の疑いを高めるべきだが、</span>
+                        <span class="phrase" data-id="p10-9" data-lang="ja">著明な核小体はまれに、</span>
+                        <span class="phrase" data-id="p10-10" data-lang="ja">（明らかに）WDPMTである腫瘍でも見られることがある。</span>
+                        <span class="phrase" data-id="p10-11" data-lang="ja">術者の記述またはCTスキャン報告書は、</span>
+                        <span class="phrase" data-id="p10-12" data-lang="ja">悪性の明白な証拠がある場合に情報を提供することがある。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p11-1" data-lang="ja">2つ目の交絡因子は卵巣型漿液性腫瘍であり、</span>
+                        <span class="phrase" data-id="p11-2" data-lang="ja">これには卵巣漿液性表面乳頭腫、</span>
+                        <span class="phrase" data-id="p11-3" data-lang="ja">漿液性境界悪性腫瘍、および時に</span>
+                        <span class="phrase" data-id="p11-4" data-lang="ja">低悪性度漿液性癌が含まれ、</span>
+                        <span class="phrase" data-id="p11-5" data-lang="ja">その大多数は腹膜腔内だが</span>
+                        <span class="phrase" data-id="p11-6" data-lang="ja">まれに精巣内/精巣傍に見られる。</span>
+                        <span class="phrase" data-id="p11-7" data-lang="ja">これらの病変はすべて乳頭状構造を持つことがあり、</span>
+                        <span class="phrase" data-id="p11-8" data-lang="ja">これはWDPMTを模倣するが、</span>
+                        <span class="phrase" data-id="p11-9" data-lang="ja">通常は円柱状細胞を有し、</span>
+                        <span class="phrase" data-id="p11-10" data-lang="ja">かなりの細胞学的異型性を持つ</span>
+                        <span class="phrase" data-id="p11-11" data-lang="ja">境界悪性および低悪性度漿液性癌において。</span>
+                        <span class="phrase" data-id="p11-12" data-lang="ja">最も重要なことに、これらは強く染色される</span>
+                        <span class="phrase" data-id="p11-13" data-lang="ja">広スペクトル癌マーカーで</span>
+                        <span class="phrase" data-id="p11-14" data-lang="ja">MOC-31、クラウディン-4、BerEP4などの。</span>
+                        <span class="phrase" data-id="p11-15" data-lang="ja">これらは通常カルレチニン陰性だが</span>
+                        <span class="phrase" data-id="p11-16" data-lang="ja">WT-1およびPAX-8陽性である。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p12-1" data-lang="ja">3つ目の、そして極めて重要な交絡因子は</span>
+                        <span class="phrase" data-id="p12-2" data-lang="ja">中皮腫上皮内病変であり、</span>
+                        <span class="phrase" data-id="p12-3" data-lang="ja">これはWDPMTの顕微鏡的外観を呈することがある</span>
+                        <span class="phrase" data-id="p12-4" data-lang="ja">（以下のセクション5参照）</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="figure">
+                <div class="bilingual-content">
+                    <div class="english">
+                        <p class="figure-caption">Fig. 1 Well differentiated papillary mesothelial tumor.</p>
+                    </div>
+                    <div class="japanese">
+                        <p class="figure-caption">図1 高分化型乳頭状中皮腫瘍。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="figure">
+                <div class="bilingual-content">
+                    <div class="english">
+                        <p class="figure-caption">Fig. 2 Diffuse mesothelioma with superficial areas mimicking well differentiated papillary mesothelial tumor.</p>
+                    </div>
+                    <div class="japanese">
+                        <p class="figure-caption">図2 高分化型乳頭状中皮腫瘍を模倣する表層領域を持つびまん性中皮腫。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Significance of invasive foci in WDPMT / WDPMTにおける浸潤巣の意義</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p13-1" data-lang="en">In most WDPMT the proliferating mesothelial cells</span> 
+                        <span class="phrase" data-id="p13-2" data-lang="en">are confined to the surface of the papillae,</span> 
+                        <span class="phrase" data-id="p13-3" data-lang="en">but occasional tumors demonstrate</span> 
+                        <span class="phrase" data-id="p13-4" data-lang="en">invasion of mesothelial cells into the fibrovascular stalks</span> 
+                        <span class="phrase" data-id="p13-5" data-lang="en">that support the papillae</span> 
+                        <span class="phrase" data-id="p13-6" data-lang="en">or sometimes below the level of the stalks (Fig. 3).</span> 
+                        <span class="phrase" data-id="p13-7" data-lang="en">These lesions are different from the type of ordinary mesothelioma</span> 
+                        <span class="phrase" data-id="p13-8" data-lang="en">in which there is surface formation of structures</span> 
+                        <span class="phrase" data-id="p13-9" data-lang="en">that mimic WDPMT (such as Fig. 2),</span> 
+                        <span class="phrase" data-id="p13-10" data-lang="en">because WDPMT with invasive foci</span> 
+                        <span class="phrase" data-id="p13-11" data-lang="en">have the overall structure of WDPMT,</span> 
+                        <span class="phrase" data-id="p13-12" data-lang="en">not diffuse mesothelioma.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p14-1" data-lang="en">Churg et al. described 20 WDPMT</span> 
+                        <span class="phrase" data-id="p14-2" data-lang="en">with invasion confined to the stalks</span> 
+                        <span class="phrase" data-id="p14-3" data-lang="en">which they labeled "well differentiated papillary mesothelioma with invasive foci."</span> 
+                        <span class="phrase" data-id="p14-4" data-lang="en">In that series tumors with invasive foci</span> 
+                        <span class="phrase" data-id="p14-5" data-lang="en">were associated with a distinct tendency toward multifocality and recurrence,</span> 
+                        <span class="phrase" data-id="p14-6" data-lang="en">the latter seen in eight patients.</span> 
+                        <span class="phrase" data-id="p14-7" data-lang="en">No patient developed metastatic disease,</span> 
+                        <span class="phrase" data-id="p14-8" data-lang="en">and only one patient was reported to have died of disease,</span> 
+                        <span class="phrase" data-id="p14-9" data-lang="en">but no histologic confirmation of the type of tumor present at death was available.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p15-1" data-lang="en">Trpkov et al. reported a case of tunica vaginalis WDPMT</span> 
+                        <span class="phrase" data-id="p15-2" data-lang="en">that by illustration had invasive foci,</span> 
+                        <span class="phrase" data-id="p15-3" data-lang="en">and the patient was well without recurrence 6 years later.</span> 
+                        <span class="phrase" data-id="p15-4" data-lang="en">Butnor et al. found superficial invasion in two pleural cases;</span> 
+                        <span class="phrase" data-id="p15-5" data-lang="en">one did not have followup and one had persisting disease at 1 year.</span> 
+                        <span class="phrase" data-id="p15-6" data-lang="en">In the peritoneal series reported by Sun et al.,</span> 
+                        <span class="phrase" data-id="p15-7" data-lang="en">six cases had invasion of mesothelial cells deep to the stalk</span> 
+                        <span class="phrase" data-id="p15-8" data-lang="en">but none of these patients developed disseminated mesothelioma.</span> 
+                        <span class="phrase" data-id="p15-9" data-lang="en">Malpica et al. noted that 1 of 26 peritoneal WDPMT</span> 
+                        <span class="phrase" data-id="p15-10" data-lang="en">showed shallow invasion into the underlying (ovarian) tissue</span> 
+                        <span class="phrase" data-id="p15-11" data-lang="en">but that this was not an adverse prognostic finding.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p16-1" data-lang="en">Reported cases in which clearly documented</span> 
+                        <span class="phrase" data-id="p16-2" data-lang="en">and unequivocal diffuse invasive mesotheliomas</span> 
+                        <span class="phrase" data-id="p16-3" data-lang="en">arose in a WDPMT are few.</span> 
+                        <span class="phrase" data-id="p16-4" data-lang="en">Torii et al. reported a case of multifocal pleural WDPMT</span> 
+                        <span class="phrase" data-id="p16-5" data-lang="en">that was treated with extrapleural pneumonectomy;</span> 
+                        <span class="phrase" data-id="p16-6" data-lang="en">deep invasive disease was seen in the resection specimen.</span> 
+                        <span class="phrase" data-id="p16-7" data-lang="en">Of interest, this patient had a pleural effusion</span> 
+                        <span class="phrase" data-id="p16-8" data-lang="en">and the illustrated cytologic appearance of the effusion</span> 
+                        <span class="phrase" data-id="p16-9" data-lang="en">was that of a mesothelioma,</span> 
+                        <span class="phrase" data-id="p16-10" data-lang="en">suggesting that the WDPMT was really mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p16-11" data-lang="en">because mesothelioma in situ has been reported</span> 
+                        <span class="phrase" data-id="p16-12" data-lang="en">to produce a picture identical to invasive mesothelioma in effusion samples.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p17-1" data-lang="en">Shimizu et al. described a patient</span> 
+                        <span class="phrase" data-id="p17-2" data-lang="en">with an incidentally discovered WDPMT lesion</span> 
+                        <span class="phrase" data-id="p17-3" data-lang="en">in a lung cancer resection specimen;</span> 
+                        <span class="phrase" data-id="p17-4" data-lang="en">there was invasion of mesothelial cells from the WDPMT</span> 
+                        <span class="phrase" data-id="p17-5" data-lang="en">into the underlying stroma</span> 
+                        <span class="phrase" data-id="p17-6" data-lang="en">and the invasive process morphologically looked like a mesothelioma.</span> 
+                        <span class="phrase" data-id="p17-7" data-lang="en">Costanzo et al. illustrated a case</span> 
+                        <span class="phrase" data-id="p17-8" data-lang="en">that morphologically started as pleural WDPMT</span> 
+                        <span class="phrase" data-id="p17-9" data-lang="en">and ended as metastatic mesothelioma 13 years later.</span> 
+                        <span class="phrase" data-id="p17-10" data-lang="en">Burrig et al. described a similarly well illustrated case</span> 
+                        <span class="phrase" data-id="p17-11" data-lang="en">in which mesothelioma developed 5 years after diagnosis</span> 
+                        <span class="phrase" data-id="p17-12" data-lang="en">of a peritoneal WDPMT.</span> 
+                        <span class="phrase" data-id="p17-13" data-lang="en">Galateau-Salle et al. reported two patients</span> 
+                        <span class="phrase" data-id="p17-14" data-lang="en">with pleural WDPMT and no evidence of invasion at biopsy,</span> 
+                        <span class="phrase" data-id="p17-15" data-lang="en">in whom invasive lethal mesothelioma was diagnosed after 10 years.</span> 
+                        <span class="phrase" data-id="p17-16" data-lang="en">Sun et al. show a nicely illustrated case</span> 
+                        <span class="phrase" data-id="p17-17" data-lang="en">in which invasive mesothelioma developed 15 years</span> 
+                        <span class="phrase" data-id="p17-18" data-lang="en">after the diagnosis of WDPMT.</span> 
+                        <span class="phrase" data-id="p17-19" data-lang="en">Washini et al. described a case</span> 
+                        <span class="phrase" data-id="p17-20" data-lang="en">in which invasive mesothelioma developed 7 years</span> 
+                        <span class="phrase" data-id="p17-21" data-lang="en">after the diagnosis of WDPMT;</span> 
+                        <span class="phrase" data-id="p17-22" data-lang="en">however, while the invasive tumor looks like a mesothelioma,</span> 
+                        <span class="phrase" data-id="p17-23" data-lang="en">from their illustrations the original tumor</span> 
+                        <span class="phrase" data-id="p17-24" data-lang="en">is suspicious for mesothelioma in situ rather than WDPMT.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p13-1" data-lang="ja">ほとんどのWDPMTでは、増殖する中皮細胞は</span>
+                        <span class="phrase" data-id="p13-2" data-lang="ja">乳頭の表面に限局しているが、</span>
+                        <span class="phrase" data-id="p13-3" data-lang="ja">時に腫瘍が示すことがある</span>
+                        <span class="phrase" data-id="p13-4" data-lang="ja">中皮細胞の線維血管性茎への浸潤を</span>
+                        <span class="phrase" data-id="p13-5" data-lang="ja">乳頭を支える</span>
+                        <span class="phrase" data-id="p13-6" data-lang="ja">あるいは時に茎のレベルより下への浸潤を（図3）。</span>
+                        <span class="phrase" data-id="p13-7" data-lang="ja">これらの病変は、通常の中皮腫の型とは異なる。</span>
+                        <span class="phrase" data-id="p13-8" data-lang="ja">そこでは構造の表面形成がある</span>
+                        <span class="phrase" data-id="p13-9" data-lang="ja">WDPMT（図2のような）を模倣する。</span>
+                        <span class="phrase" data-id="p13-10" data-lang="ja">なぜなら、浸潤巣を伴うWDPMTは、</span>
+                        <span class="phrase" data-id="p13-11" data-lang="ja">WDPMTの全体的構造を持つ、</span>
+                        <span class="phrase" data-id="p13-12" data-lang="ja">びまん性中皮腫ではなく。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p14-1" data-lang="ja">Churgらは20例のWDPMTを記述した</span>
+                        <span class="phrase" data-id="p14-2" data-lang="ja">茎に限局した浸潤を持つ</span>
+                        <span class="phrase" data-id="p14-3" data-lang="ja">彼らは「浸潤巣を伴う高分化型乳頭状中皮腫」と名付けた。</span>
+                        <span class="phrase" data-id="p14-4" data-lang="ja">そのシリーズでは、浸潤巣を伴う腫瘍は</span>
+                        <span class="phrase" data-id="p14-5" data-lang="ja">多巣性と再発への明確な傾向と関連しており、</span>
+                        <span class="phrase" data-id="p14-6" data-lang="ja">後者は8例の患者で見られた。</span>
+                        <span class="phrase" data-id="p14-7" data-lang="ja">転移性疾患を発症した患者はいなかった。</span>
+                        <span class="phrase" data-id="p14-8" data-lang="ja">そして、疾患で死亡したと報告された患者は1例のみだったが、</span>
+                        <span class="phrase" data-id="p14-9" data-lang="ja">死亡時に存在した腫瘍の種類の組織学的確認は得られなかった。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p15-1" data-lang="ja">Trpkovらは、精巣鞘膜WDPMTの症例を報告し、</span>
+                        <span class="phrase" data-id="p15-2" data-lang="ja">図示によると浸潤巣を持っていた。</span>
+                        <span class="phrase" data-id="p15-3" data-lang="ja">患者は6年後も再発なく健康だった。</span>
+                        <span class="phrase" data-id="p15-4" data-lang="ja">Butnorらは2例の胸膜症例で表層浸潤を見出した。</span>
+                        <span class="phrase" data-id="p15-5" data-lang="ja">1例は追跡調査がなく、1例は1年で疾患が持続していた。</span>
+                        <span class="phrase" data-id="p15-6" data-lang="ja">Sunらによって報告された腹膜シリーズでは、</span>
+                        <span class="phrase" data-id="p15-7" data-lang="ja">6例が茎よりも深部への中皮細胞の浸潤を示したが、</span>
+                        <span class="phrase" data-id="p15-8" data-lang="ja">これらの患者のいずれも播種性中皮腫を発症しなかった。</span>
+                        <span class="phrase" data-id="p15-9" data-lang="ja">Malpicaらは、26例の腹膜WDPMTのうち1例が</span>
+                        <span class="phrase" data-id="p15-10" data-lang="ja">下層（卵巣）組織への浅い浸潤を示したが、</span>
+                        <span class="phrase" data-id="p15-11" data-lang="ja">これは不良な予後因子ではなかったと指摘した。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p16-1" data-lang="ja">明確に文書化され、</span>
+                        <span class="phrase" data-id="p16-2" data-lang="ja">明らかなびまん性浸潤性中皮腫が</span>
+                        <span class="phrase" data-id="p16-3" data-lang="ja">WDPMTから発生した報告例は少ない。</span>
+                        <span class="phrase" data-id="p16-4" data-lang="ja">Toriiらは多巣性胸膜WDPMTの症例を報告し、</span>
+                        <span class="phrase" data-id="p16-5" data-lang="ja">それは胸膜外肺摘除術で治療された。</span>
+                        <span class="phrase" data-id="p16-6" data-lang="ja">切除標本では深部浸潤性疾患が見られた。</span>
+                        <span class="phrase" data-id="p16-7" data-lang="ja">興味深いことに、この患者は胸水を有し、</span>
+                        <span class="phrase" data-id="p16-8" data-lang="ja">胸水の図示された細胞学的外観は</span>
+                        <span class="phrase" data-id="p16-9" data-lang="ja">中皮腫のものであり、</span>
+                        <span class="phrase" data-id="p16-10" data-lang="ja">WDPMTは実際には中皮腫上皮内病変であった可能性を示唆している。</span>
+                        <span class="phrase" data-id="p16-11" data-lang="ja">中皮腫上皮内病変が報告されているため</span>
+                        <span class="phrase" data-id="p16-12" data-lang="ja">浸潤性中皮腫と同一の像を胸水サンプルで呈することが。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p17-1" data-lang="ja">清水らは患者を記述した</span>
+                        <span class="phrase" data-id="p17-2" data-lang="ja">肺癌切除標本中に偶然発見された</span>
+                        <span class="phrase" data-id="p17-3" data-lang="ja">WDPMT病変を持つ。</span>
+                        <span class="phrase" data-id="p17-4" data-lang="ja">WDPMTからの中皮細胞の浸潤があり、</span>
+                        <span class="phrase" data-id="p17-5" data-lang="ja">下層間質への</span>
+                        <span class="phrase" data-id="p17-6" data-lang="ja">浸潤過程は形態学的に中皮腫のように見えた。</span>
+                        <span class="phrase" data-id="p17-7" data-lang="ja">Costanzoらは症例を図示した</span>
+                        <span class="phrase" data-id="p17-8" data-lang="ja">形態学的に胸膜WDPMTとして始まり、</span>
+                        <span class="phrase" data-id="p17-9" data-lang="ja">13年後に転移性中皮腫として終わった。</span>
+                        <span class="phrase" data-id="p17-10" data-lang="ja">Burrigらは同様に、よく図示された症例を記述した</span>
+                        <span class="phrase" data-id="p17-11" data-lang="ja">中皮腫が診断から5年後に発症した</span>
+                        <span class="phrase" data-id="p17-12" data-lang="ja">腹膜WDPMTの。</span>
+                        <span class="phrase" data-id="p17-13" data-lang="ja">Galateau-Salleらは2人の患者について報告し、</span>
+                        <span class="phrase" data-id="p17-14" data-lang="ja">生検時に浸潤の証拠がない胸膜WDPMTを持つ、</span>
+                        <span class="phrase" data-id="p17-15" data-lang="ja">彼らでは10年後に浸潤性致死性中皮腫が診断された。</span>
+                        <span class="phrase" data-id="p17-16" data-lang="ja">Sunらは、よく図示された症例を示している</span>
+                        <span class="phrase" data-id="p17-17" data-lang="ja">浸潤性中皮腫が15年後に発症した</span>
+                        <span class="phrase" data-id="p17-18" data-lang="ja">WDPMT診断から。</span>
+                        <span class="phrase" data-id="p17-19" data-lang="ja">Washiniらは症例を記述した</span>
+                        <span class="phrase" data-id="p17-20" data-lang="ja">浸潤性中皮腫が7年後に発症した</span>
+                        <span class="phrase" data-id="p17-21" data-lang="ja">WDPMT診断から。</span>
+                        <span class="phrase" data-id="p17-22" data-lang="ja">しかし、浸潤性腫瘍は中皮腫のように見えるが、</span>
+                        <span class="phrase" data-id="p17-23" data-lang="ja">彼らの図からは元の腫瘍は</span>
+                        <span class="phrase" data-id="p17-24" data-lang="ja">WDPMTというよりも中皮腫上皮内病変の疑いがある。</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="figure">
+                <div class="bilingual-content">
+                    <div class="english">
+                        <p class="figure-caption">Fig. 3 A well differentiated papillary mesothelial tumor with invasion into the stalk.</p>
+                    </div>
+                    <div class="japanese">
+                        <p class="figure-caption">図3 茎への浸潤を伴う高分化型乳頭状中皮腫瘍。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Genetics / 遺伝学</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p18-1" data-lang="en">There is very little in the literature</span> 
+                        <span class="phrase" data-id="p18-2" data-lang="en">on genomic analyses of WDPMT,</span> 
+                        <span class="phrase" data-id="p18-3" data-lang="en">and all of this is confined to peritoneal tumors.</span> 
+                        <span class="phrase" data-id="p18-4" data-lang="en">Stevers et al. reported ten cases</span> 
+                        <span class="phrase" data-id="p18-5" data-lang="en">and found only mutually exclusive CDC42 (two cases)</span> 
+                        <span class="phrase" data-id="p18-6" data-lang="en">or TRAF7 (eight cases) missense mutations.</span> 
+                        <span class="phrase" data-id="p18-7" data-lang="en">Their TRAF7 mutations all localized</span> 
+                        <span class="phrase" data-id="p18-8" data-lang="en">at the C-terminus of the protein.</span> 
+                        <span class="phrase" data-id="p18-9" data-lang="en">Of interest, to get adequate sequencing depth</span> 
+                        <span class="phrase" data-id="p18-10" data-lang="en">Stevers et al. combined multiple separate WDPMT tumors</span> 
+                        <span class="phrase" data-id="p18-11" data-lang="en">in two patients but still found</span> 
+                        <span class="phrase" data-id="p18-12" data-lang="en">only a single CDC42 or TRAF7 mutation in each patient,</span> 
+                        <span class="phrase" data-id="p18-13" data-lang="en">which suggests that multifocal WDPMT represents clonal spread.</span> 
+                        <span class="phrase" data-id="p18-14" data-lang="en">Nine cases did not have copy number losses or gains.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p19-1" data-lang="en">In contrast, Shrestha et al. analyzed 5 cases</span> 
+                        <span class="phrase" data-id="p19-2" data-lang="en">and found recurrent missence mutations of</span> 
+                        <span class="phrase" data-id="p19-3" data-lang="en">EHD1, ATM, FBXO10, SH2D2A, CDH5, MAGED1, and TP73,</span> 
+                        <span class="phrase" data-id="p19-4" data-lang="en">all present in either 4/5 or 5/5 cases.</span> 
+                        <span class="phrase" data-id="p19-5" data-lang="en">No case had a mutation of either TRAF7 or CDC42,</span> 
+                        <span class="phrase" data-id="p19-6" data-lang="en">although one showed copy number loss of TRAF7.</span> 
+                        <span class="phrase" data-id="p19-7" data-lang="en">The WDPMT was strongly enriched for C>A transversion substitutions,</span> 
+                        <span class="phrase" data-id="p19-8" data-lang="en">a pattern that is not seen in MM.</span> 
+                        <span class="phrase" data-id="p19-9" data-lang="en">There were a variety of copy number losses and gains</span> 
+                        <span class="phrase" data-id="p19-10" data-lang="en">but no consistent pattern across the 5 tumors.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p20-1" data-lang="en">None of the WDPMT in either the Stevers or Shrestha paper</span> 
+                        <span class="phrase" data-id="p20-2" data-lang="en">had abnormalities in genes found to be recurrently mutated or deleted in MM</span> 
+                        <span class="phrase" data-id="p20-3" data-lang="en">such as BAP1, SETD2, NF2, LATS1/2, CDKN2A/B),</span> 
+                        <span class="phrase" data-id="p20-4" data-lang="en">although it should be noted that TRAF7 mutations</span> 
+                        <span class="phrase" data-id="p20-5" data-lang="en">have been described in a few peritoneal mesotheliomas.</span> 
+                        <span class="phrase" data-id="p20-6" data-lang="en">Nemoto et al. reported a lesion claimed to be WDPMT</span> 
+                        <span class="phrase" data-id="p20-7" data-lang="en">in which loss of heterozygosity in NF2 was present;</span> 
+                        <span class="phrase" data-id="p20-8" data-lang="en">however, their illustrations do not look at all like WDPMT</span> 
+                        <span class="phrase" data-id="p20-9" data-lang="en">and probably represent an ordinary MM.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p18-1" data-lang="ja">WDPMTのゲノム解析に関する文献は</span>
+                        <span class="phrase" data-id="p18-2" data-lang="ja">ごくわずかであり、</span>
+                        <span class="phrase" data-id="p18-3" data-lang="ja">すべて腹膜腫瘍に限られている。</span>
+                        <span class="phrase" data-id="p18-4" data-lang="ja">Steversらは10例を報告し、</span>
+                        <span class="phrase" data-id="p18-5" data-lang="ja">相互排他的なCDC42（2例）</span>
+                        <span class="phrase" data-id="p18-6" data-lang="ja">またはTRAF7（8例）ミスセンス変異のみを発見した。</span>
+                        <span class="phrase" data-id="p18-7" data-lang="ja">彼らのTRAF7変異はすべて局在していた</span>
+                        <span class="phrase" data-id="p18-8" data-lang="ja">タンパク質のC末端に。</span>
+                        <span class="phrase" data-id="p18-9" data-lang="ja">興味深いことに、十分なシーケンシング深度を得るために、</span>
+                        <span class="phrase" data-id="p18-10" data-lang="ja">Steversらは2人の患者の複数の別々のWDPMT腫瘍を組み合わせたが、</span>
+                        <span class="phrase" data-id="p18-11" data-lang="ja">それでも見つけたのは</span>
+                        <span class="phrase" data-id="p18-12" data-lang="ja">各患者で単一のCDC42またはTRAF7変異のみで、</span>
+                        <span class="phrase" data-id="p18-13" data-lang="ja">これは多巣性WDPMTがクローン性拡散を示すことを示唆している。</span>
+                        <span class="phrase" data-id="p18-14" data-lang="ja">9例はコピー数の損失または増加を示さなかった。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p19-1" data-lang="ja">対照的に、Shresthaらは5例を分析し、</span>
+                        <span class="phrase" data-id="p19-2" data-lang="ja">再発性ミスセンス変異を発見した</span>
+                        <span class="phrase" data-id="p19-3" data-lang="ja">EHD1、ATM、FBXO10、SH2D2A、CDH5、MAGED1、TP73の、</span>
+                        <span class="phrase" data-id="p19-4" data-lang="ja">すべてが4/5または5/5例で存在していた。</span>
+                        <span class="phrase" data-id="p19-5" data-lang="ja">TRAF7またはCDC42のいずれかの変異を持つ症例はなかった、</span>
+                        <span class="phrase" data-id="p19-6" data-lang="ja">TRAF7のコピー数損失を示した1例を除いて。</span>
+                        <span class="phrase" data-id="p19-7" data-lang="ja">WDPMTはC>Aトランスバージョン置換が強く豊富であり、</span>
+                        <span class="phrase" data-id="p19-8" data-lang="ja">これはMMでは見られないパターンである。</span>
+                        <span class="phrase" data-id="p19-9" data-lang="ja">様々なコピー数の損失と増加があったが、</span>
+                        <span class="phrase" data-id="p19-10" data-lang="ja">5つの腫瘍にわたる一貫したパターンはなかった。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p20-1" data-lang="ja">SteversとShresthaの論文のいずれのWDPMTも</span>
+                        <span class="phrase" data-id="p20-2" data-lang="ja">MMで繰り返し変異または削除が見られる遺伝子の異常はなかった</span>
+                        <span class="phrase" data-id="p20-3" data-lang="ja">BAP1、SETD2、NF2、LATS1/2、CDKN2A/Bなどの、</span>
+                        <span class="phrase" data-id="p20-4" data-lang="ja">TRAF7変異が</span>
+                        <span class="phrase" data-id="p20-5" data-lang="ja">いくつかの腹膜中皮腫で記述されていることに注意すべきである。</span>
+                        <span class="phrase" data-id="p20-6" data-lang="ja">根本らはWDPMTと主張された病変を報告した</span>
+                        <span class="phrase" data-id="p20-7" data-lang="ja">NF2のヘテロ接合性喪失が存在する。</span>
+                        <span class="phrase" data-id="p20-8" data-lang="ja">しかし、彼らの図はWDPMTのようには見えず</span>
+                        <span class="phrase" data-id="p20-9" data-lang="ja">おそらく通常のMMを表している。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>WDPMT as a manifestation of mesothelioma in situ / 中皮腫上皮内病変の症状としてのWDPMT</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p21-1" data-lang="en">Mesothelioma in situ (MIS) was recently defined</span> 
+                        <span class="phrase" data-id="p21-2" data-lang="en">as single layer of flattened to cuboidal mesothelial cells</span> 
+                        <span class="phrase" data-id="p21-3" data-lang="en">that had lost BAP1, and sometimes MTAP,</span> 
+                        <span class="phrase" data-id="p21-4" data-lang="en">by immunochemical staining.</span> 
+                        <span class="phrase" data-id="p21-5" data-lang="en">A single case of MIS with CDKN2A deletion</span> 
+                        <span class="phrase" data-id="p21-6" data-lang="en">but BAP1 retention has also been described.</span> 
+                        <span class="phrase" data-id="p21-7" data-lang="en">However, the original description of ten cases of MIS</span> 
+                        <span class="phrase" data-id="p21-8" data-lang="en">included one (pleural) case</span> 
+                        <span class="phrase" data-id="p21-9" data-lang="en">with both flat mesothelium and a process</span> 
+                        <span class="phrase" data-id="p21-10" data-lang="en">morphologically very similar to WDPMT.</span> 
+                        <span class="phrase" data-id="p21-11" data-lang="en">We have subsequently seen a number of cases</span> 
+                        <span class="phrase" data-id="p21-12" data-lang="en">of peritoneal MIS that have</span> 
+                        <span class="phrase" data-id="p21-13" data-lang="en">both flat single-layered mesothelium</span> 
+                        <span class="phrase" data-id="p21-14" data-lang="en">and areas identical to WDPMT (Fig. 4).</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p22-1" data-lang="en">Other authors have described "WDPMT" with BAP1 loss.</span> 
+                        <span class="phrase" data-id="p22-2" data-lang="en">Lee et al. stained eight peritoneal cases</span> 
+                        <span class="phrase" data-id="p22-3" data-lang="en">that microscopically looked like WDPMT.</span> 
+                        <span class="phrase" data-id="p22-4" data-lang="en">BAP1 was lost in three</span> 
+                        <span class="phrase" data-id="p22-5" data-lang="en">and these three had synchronous (but spatially separated)</span> 
+                        <span class="phrase" data-id="p22-6" data-lang="en">or metachronous invasive mesothelioma;</span> 
+                        <span class="phrase" data-id="p22-7" data-lang="en">genetic analysis showed an identical pattern</span> 
+                        <span class="phrase" data-id="p22-8" data-lang="en">between the WDPMT and the invasive tumor in each case.</span> 
+                        <span class="phrase" data-id="p22-9" data-lang="en">We believe that these cases really are examples of MIS</span> 
+                        <span class="phrase" data-id="p22-10" data-lang="en">that morphologically look like WDPMT.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p23-1" data-lang="en">Dacic et al. performed whole-exome sequencing</span> 
+                        <span class="phrase" data-id="p23-2" data-lang="en">on two cases of MIS</span> 
+                        <span class="phrase" data-id="p23-3" data-lang="en">which immunohistochemically showed BAP1 loss;</span> 
+                        <span class="phrase" data-id="p23-4" data-lang="en">in both cases, the analyzed areas were</span> 
+                        <span class="phrase" data-id="p23-5" data-lang="en">partially flat and partially papillary,</span> 
+                        <span class="phrase" data-id="p23-6" data-lang="en">with the latter areas having the appearance of WDPMT.</span> 
+                        <span class="phrase" data-id="p23-7" data-lang="en">The pleural case had copy number loss and LOH</span> 
+                        <span class="phrase" data-id="p23-8" data-lang="en">in the 3p21 region that harbors BAP1.</span> 
+                        <span class="phrase" data-id="p23-9" data-lang="en">The peritoneal tumor showed a somatic BAP1 splice site mutation</span> 
+                        <span class="phrase" data-id="p23-10" data-lang="en">and BAP1 copy number loss.</span> 
+                        <span class="phrase" data-id="p23-11" data-lang="en">No other somatic mutations, indels,</span> 
+                        <span class="phrase" data-id="p23-12" data-lang="en">or somatic copy number abnormalities were identified;</span> 
+                        <span class="phrase" data-id="p23-13" data-lang="en">in particular, none of the recurrent mutations</span> 
+                        <span class="phrase" data-id="p23-14" data-lang="en">or recurrent copy number losses</span> 
+                        <span class="phrase" data-id="p23-15" data-lang="en">seen in ordinary MM were present.</span> 
+                        <span class="phrase" data-id="p23-16" data-lang="en">Dacic et al. suggested that BAP1 mutations/deletions</span> 
+                        <span class="phrase" data-id="p23-17" data-lang="en">may be the earliest abnormality in invasive mesothelioma.</span> 
+                        <span class="phrase" data-id="p23-18" data-lang="en">Since BAP1 loss/mutation is always a marker of malignancy</span> 
+                        <span class="phrase" data-id="p23-19" data-lang="en">in mesothelial proliferations</span> 
+                        <span class="phrase" data-id="p23-20" data-lang="en">these data strongly imply that some WDPMT,</span> 
+                        <span class="phrase" data-id="p23-21" data-lang="en">or at least papillary processes that look like WDPMT,</span> 
+                        <span class="phrase" data-id="p23-22" data-lang="en">are precursors of invasive mesothelioma,</span> 
+                        <span class="phrase" data-id="p23-23" data-lang="en">an idea that contradicts the (very limited)</span> 
+                        <span class="phrase" data-id="p23-24" data-lang="en">published genomic analyses of WDPMT described above.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p24-1" data-lang="en">It appears likely that MIS always becomes invasive,</span> 
+                        <span class="phrase" data-id="p24-2" data-lang="en">although the time from biopsy diagnosis of MIS</span> 
+                        <span class="phrase" data-id="p24-3" data-lang="en">to invasive disease is unclear</span> 
+                        <span class="phrase" data-id="p24-4" data-lang="en">and can be quite long.</span> 
+                        <span class="phrase" data-id="p24-5" data-lang="en">In the series reported by Churg et al.,</span> 
+                        <span class="phrase" data-id="p24-6" data-lang="en">invasive disease developed in 7/10 patients</span> 
+                        <span class="phrase" data-id="p24-7" data-lang="en">with an 8th patient showing diffuse pleural thickening on imaging</span> 
+                        <span class="phrase" data-id="p24-8" data-lang="en">thought suspicious for an invasive mesothelioma at 57 months.</span> 
+                        <span class="phrase" data-id="p24-9" data-lang="en">For the seven cases with eventual overt MM,</span> 
+                        <span class="phrase" data-id="p24-10" data-lang="en">the median time to invasion was 60 months</span> 
+                        <span class="phrase" data-id="p24-11" data-lang="en">with the longest time 92 months,</span> 
+                        <span class="phrase" data-id="p24-12" data-lang="en">but one patient still had not developed invasive disease at 120 months.</span> 
+                        <span class="phrase" data-id="p24-13" data-lang="en">In the report of Klebe et al.,</span> 
+                        <span class="phrase" data-id="p24-14" data-lang="en">invasive tumor developed after 4 years 10 months.</span> 
+                        <span class="phrase" data-id="p24-15" data-lang="en">Fels Elliott described a patient with invasive disease</span> 
+                        <span class="phrase" data-id="p24-16" data-lang="en">diagnosed at 10 months after biopsy,</span> 
+                        <span class="phrase" data-id="p24-17" data-lang="en">and Minami et al. a patient</span> 
+                        <span class="phrase" data-id="p24-18" data-lang="en">in whom no invasive disease could be detected at 9 months.</span> 
+                        <span class="phrase" data-id="p24-19" data-lang="en">The metachronous case described by Lee et al.</span> 
+                        <span class="phrase" data-id="p24-20" data-lang="en">had a 10 yr interval between</span> 
+                        <span class="phrase" data-id="p24-21" data-lang="en">the diagnosis of WDPMT (really MIS)</span> 
+                        <span class="phrase" data-id="p24-22" data-lang="en">and the appearance of invasive mesothelioma.</span> 
+                        <span class="phrase" data-id="p24-23" data-lang="en">In the multi-author position paper by Klebe et al.,</span> 
+                        <span class="phrase" data-id="p24-24" data-lang="en">40% of pathologists reported seeing cases</span> 
+                        <span class="phrase" data-id="p24-25" data-lang="en">with a greater than 4 year interval between</span> 
+                        <span class="phrase" data-id="p24-26" data-lang="en">the diagnosis of MIS and the appearance of invasive mesothelioma,</span> 
+                        <span class="phrase" data-id="p24-27" data-lang="en">although it is not entirely clear</span> 
+                        <span class="phrase" data-id="p24-28" data-lang="en">whether all authors of that paper</span> 
+                        <span class="phrase" data-id="p24-29" data-lang="en">were using the same definition of MIS.</span> 
+                        <span class="phrase" data-id="p24-30" data-lang="en">It should be noted that the papers reviewed in this paragraph</span> 
+                        <span class="phrase" data-id="p24-31" data-lang="en">largely describe flat and not papillary lesions;</span> 
+                        <span class="phrase" data-id="p24-32" data-lang="en">in fact, Klebe et al. position paper suggests</span> 
+                        <span class="phrase" data-id="p24-33" data-lang="en">that WDPMT morphology is not a feature of MIS.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p21-1" data-lang="ja">中皮腫上皮内病変（MIS）は最近、</span>
+                        <span class="phrase" data-id="p21-2" data-lang="ja">扁平から立方体状の中皮細胞の単層として定義され、</span>
+                        <span class="phrase" data-id="p21-3" data-lang="ja">免疫化学染色によってBAP1、そして時にMTAPを喪失した</span>
+                        <span class="phrase" data-id="p21-4" data-lang="ja">ものとして定義された。</span>
+                        <span class="phrase" data-id="p21-5" data-lang="ja">BAP1保持でCDKN2A欠失を持つ</span>
+                        <span class="phrase" data-id="p21-6" data-lang="ja">MISの単一例も記述されている。</span>
+                        <span class="phrase" data-id="p21-7" data-lang="ja">しかし、10例のMISの元の記述には、</span>
+                        <span class="phrase" data-id="p21-8" data-lang="ja">1例（胸膜）が含まれており、</span>
+                        <span class="phrase" data-id="p21-9" data-lang="ja">平坦な中皮とプロセスの両方を持つ</span>
+                        <span class="phrase" data-id="p21-10" data-lang="ja">形態学的にWDPMTに非常に類似した。</span>
+                        <span class="phrase" data-id="p21-11" data-lang="ja">その後、我々は複数の症例を見てきた</span>
+                        <span class="phrase" data-id="p21-12" data-lang="ja">腹膜MISの</span>
+                        <span class="phrase" data-id="p21-13" data-lang="ja">平坦な単層中皮と</span>
+                        <span class="phrase" data-id="p21-14" data-lang="ja">WDPMTと同一の領域の両方を持つ（図4）。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p22-1" data-lang="ja">他の著者はBAP1喪失を伴う「WDPMT」を記述している。</span>
+                        <span class="phrase" data-id="p22-2" data-lang="ja">Leeらは顕微鏡的にWDPMTのように見える</span>
+                        <span class="phrase" data-id="p22-3" data-lang="ja">8例の腹膜症例を染色した。</span>
+                        <span class="phrase" data-id="p22-4" data-lang="ja">BAP1は3例で喪失しており、</span>
+                        <span class="phrase" data-id="p22-5" data-lang="ja">これら3例は同期（ただし空間的に分離された）</span>
+                        <span class="phrase" data-id="p22-6" data-lang="ja">または異時性の浸潤性中皮腫を有していた。</span>
+                        <span class="phrase" data-id="p22-7" data-lang="ja">遺伝子解析では、同一のパターンが示された</span>
+                        <span class="phrase" data-id="p22-8" data-lang="ja">各症例でWDPMTと浸潤性腫瘍の間に。</span>
+                        <span class="phrase" data-id="p22-9" data-lang="ja">我々はこれらの症例が実際にはMISの例であると考えている</span>
+                        <span class="phrase" data-id="p22-10" data-lang="ja">形態学的にWDPMTのように見える。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p23-1" data-lang="ja">Dacicらは全エクソームシーケンシングを実施した</span>
+                        <span class="phrase" data-id="p23-2" data-lang="ja">2例のMISに対して</span>
+                        <span class="phrase" data-id="p23-3" data-lang="ja">免疫組織化学的にBAP1喪失を示した。</span>
+                        <span class="phrase" data-id="p23-4" data-lang="ja">両方の症例で、分析された領域は</span>
+                        <span class="phrase" data-id="p23-5" data-lang="ja">部分的に平坦で部分的に乳頭状であり、</span>
+                        <span class="phrase" data-id="p23-6" data-lang="ja">後者の領域はWDPMTの外観を持っていた。</span>
+                        <span class="phrase" data-id="p23-7" data-lang="ja">胸膜症例はコピー数損失とLOHを有していた</span>
+                        <span class="phrase" data-id="p23-8" data-lang="ja">BAP1を含む3p21領域の。</span>
+                        <span class="phrase" data-id="p23-9" data-lang="ja">腹膜腫瘍は体細胞性BAP1スプライス部位変異と</span>
+                        <span class="phrase" data-id="p23-10" data-lang="ja">BAP1コピー数損失を示した。</span>
+                        <span class="phrase" data-id="p23-11" data-lang="ja">他の体細胞変異、インデル、</span>
+                        <span class="phrase" data-id="p23-12" data-lang="ja">または体細胞コピー数異常は同定されなかった。</span>
+                        <span class="phrase" data-id="p23-13" data-lang="ja">特に、再発性変異</span>
+                        <span class="phrase" data-id="p23-14" data-lang="ja">または再発性コピー数損失の</span>
+                        <span class="phrase" data-id="p23-15" data-lang="ja">通常のMMで見られるものはなかった。</span>
+                        <span class="phrase" data-id="p23-16" data-lang="ja">Dacicらは、BAP1変異/欠失が</span>
+                        <span class="phrase" data-id="p23-17" data-lang="ja">浸潤性中皮腫における最も早期の異常である可能性を示唆した。</span>
+                        <span class="phrase" data-id="p23-18" data-lang="ja">中皮増殖においてBAP1喪失/変異は常に悪性のマーカーであるため、</span>
+                        <span class="phrase" data-id="p23-19" data-lang="ja">中皮増殖において</span>
+                        <span class="phrase" data-id="p23-20" data-lang="ja">これらのデータは一部のWDPMT、</span>
+                        <span class="phrase" data-id="p23-21" data-lang="ja">または少なくともWDPMTのように見える乳頭状プロセスが、</span>
+                        <span class="phrase" data-id="p23-22" data-lang="ja">浸潤性中皮腫の前駆体であることを強く示唆している。</span>
+                        <span class="phrase" data-id="p23-23" data-lang="ja">これは上記で説明した（非常に限られた）</span>
+                        <span class="phrase" data-id="p23-24" data-lang="ja">公表されたWDPMTのゲノム解析と矛盾する考えである。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p24-1" data-lang="ja">MISは常に浸潤性になるように思われるが、</span>
+                        <span class="phrase" data-id="p24-2" data-lang="ja">MISの生検診断から</span>
+                        <span class="phrase" data-id="p24-3" data-lang="ja">浸潤性疾患までの時間は不明であり、</span>
+                        <span class="phrase" data-id="p24-4" data-lang="ja">かなり長くなることがある。</span>
+                        <span class="phrase" data-id="p24-5" data-lang="ja">Churgらが報告したシリーズでは、</span>
+                        <span class="phrase" data-id="p24-6" data-lang="ja">7/10人の患者で浸潤性疾患が発症し、</span>
+                        <span class="phrase" data-id="p24-7" data-lang="ja">8番目の患者は画像上のびまん性胸膜肥厚を示し</span>
+                        <span class="phrase" data-id="p24-8" data-lang="ja">57ヶ月で浸潤性中皮腫が疑わしいと思われた。</span>
+                        <span class="phrase" data-id="p24-9" data-lang="ja">最終的に明らかなMMになった7例について、</span>
+                        <span class="phrase" data-id="p24-10" data-lang="ja">浸潤までの中央値は60ヶ月で、</span>
+                        <span class="phrase" data-id="p24-11" data-lang="ja">最長時間は92ヶ月だったが、</span>
+                        <span class="phrase" data-id="p24-12" data-lang="ja">1人の患者は120ヶ月で依然として浸潤性疾患を発症していなかった。</span>
+                        <span class="phrase" data-id="p24-13" data-lang="ja">Klebeらの報告では、</span>
+                        <span class="phrase" data-id="p24-14" data-lang="ja">浸潤性腫瘍は4年10ヶ月後に発症した。</span>
+                        <span class="phrase" data-id="p24-15" data-lang="ja">Fels Elliottは生検後10ヶ月で</span>
+                        <span class="phrase" data-id="p24-16" data-lang="ja">浸潤性疾患と診断された患者を記述し、</span>
+                        <span class="phrase" data-id="p24-17" data-lang="ja">Minamiらは患者を</span>
+                        <span class="phrase" data-id="p24-18" data-lang="ja">9ヶ月で浸潤性疾患が検出できなかった。</span>
+                        <span class="phrase" data-id="p24-19" data-lang="ja">Leeらによって記述された異時性症例は、</span>
+                        <span class="phrase" data-id="p24-20" data-lang="ja">10年の間隔があった</span>
+                        <span class="phrase" data-id="p24-21" data-lang="ja">WDPMT（実際にはMIS）の診断と</span>
+                        <span class="phrase" data-id="p24-22" data-lang="ja">浸潤性中皮腫の出現の間に。</span>
+                        <span class="phrase" data-id="p24-23" data-lang="ja">Klebeらによる複数著者の立場文書では、</span>
+                        <span class="phrase" data-id="p24-24" data-lang="ja">病理医の40%が症例を見たと報告している</span>
+                        <span class="phrase" data-id="p24-25" data-lang="ja">4年以上の間隔がある</span>
+                        <span class="phrase" data-id="p24-26" data-lang="ja">MISの診断と浸潤性中皮腫の出現の間に、</span>
+                        <span class="phrase" data-id="p24-27" data-lang="ja">しかし完全には明確ではない</span>
+                        <span class="phrase" data-id="p24-28" data-lang="ja">その論文のすべての著者が</span>
+                        <span class="phrase" data-id="p24-29" data-lang="ja">同じMISの定義を使用していたかどうかは。</span>
+                        <span class="phrase" data-id="p24-30" data-lang="ja">この段落でレビューされた論文は</span>
+                        <span class="phrase" data-id="p24-31" data-lang="ja">主に平坦な病変を記述しており、乳頭状病変ではないことに注意すべきである。</span>
+                        <span class="phrase" data-id="p24-32" data-lang="ja">実際、Klebeらの立場文書は示唆している</span>
+                        <span class="phrase" data-id="p24-33" data-lang="ja">WDPMT形態がMISの特徴ではないことを。</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="figure">
+                <div class="bilingual-content">
+                    <div class="english">
+                        <p class="figure-caption">Fig. 4 Mesothelioma in situ mimicking well differentiated papillary mesothelial tumor.</p>
+                    </div>
+                    <div class="japanese">
+                        <p class="figure-caption">図4 高分化型乳頭状中皮腫瘍を模倣する中皮腫上皮内病変。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Conclusions: the nature of WDPMT / 結論：WDPMTの性質</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p25-1" data-lang="en">The data just described raise a contradictory question:</span> 
+                        <span class="phrase" data-id="p25-2" data-lang="en">is WDPMT a generally innocuous finding,</span> 
+                        <span class="phrase" data-id="p25-3" data-lang="en">at least in the peritoneal cavity</span> 
+                        <span class="phrase" data-id="p25-4" data-lang="en">where most such tumors occur,</span> 
+                        <span class="phrase" data-id="p25-5" data-lang="en">or it is a form of mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p25-6" data-lang="en">and a precursor of invasive mesothelioma?</span> 
+                        <span class="phrase" data-id="p25-7" data-lang="en">The WHO Female Genital Tumors book proposes</span> 
+                        <span class="phrase" data-id="p25-8" data-lang="en">that WDPMT in the peritoneum are benign</span> 
+                        <span class="phrase" data-id="p25-9" data-lang="en">and that aggressive behavior is indicative</span> 
+                        <span class="phrase" data-id="p25-10" data-lang="en">of a missed diagnosis of MM,</span> 
+                        <span class="phrase" data-id="p25-11" data-lang="en">whereas the Thoracic Tumors WHO book concludes</span> 
+                        <span class="phrase" data-id="p25-12" data-lang="en">that most pleural WDPMT behave</span> 
+                        <span class="phrase" data-id="p25-13" data-lang="en">as slowly growing recurrent lesions.</span> 
+                        <span class="phrase" data-id="p25-14" data-lang="en">A major confounder is that, in many instances,</span> 
+                        <span class="phrase" data-id="p25-15" data-lang="en">tumors that are called recurrent or (eventually) clinically malignant</span> 
+                        <span class="phrase" data-id="p25-16" data-lang="en">are not biopsied so whether they are MM is usually not documented.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p26-1" data-lang="en">Detailed followup on the largest series suggests that,</span> 
+                        <span class="phrase" data-id="p26-2" data-lang="en">in the peritoneal cavity,</span> 
+                        <span class="phrase" data-id="p26-3" data-lang="en">the vast majority of tumors that look like WDPMT</span> 
+                        <span class="phrase" data-id="p26-4" data-lang="en">do appear to be functionally benign, even if multifocal.</span> 
+                        <span class="phrase" data-id="p26-5" data-lang="en">In the pleural cavity the prognosis is more guarded,</span> 
+                        <span class="phrase" data-id="p26-6" data-lang="en">although as detailed above,</span> 
+                        <span class="phrase" data-id="p26-7" data-lang="en">it is hard to find many published examples</span> 
+                        <span class="phrase" data-id="p26-8" data-lang="en">of invasive mesothelioma developing from WDPMT lesions in either site.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p27-1" data-lang="en">Genomic analyses, albeit based on few and only peritoneal cases,</span> 
+                        <span class="phrase" data-id="p27-2" data-lang="en">imply that WDPMT are distinct neoplasms</span> 
+                        <span class="phrase" data-id="p27-3" data-lang="en">that have no relationship to ordinary diffuse mesotheliomas.</span> 
+                        <span class="phrase" data-id="p27-4" data-lang="en">However, this idea is contradicted by</span> 
+                        <span class="phrase" data-id="p27-5" data-lang="en">the observation of BAP1 loss by immunochemistry</span> 
+                        <span class="phrase" data-id="p27-6" data-lang="en">and BAP1 mutations/deletions in cases of mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p27-7" data-lang="en">that are morphologically identical to WDPMT</span> 
+                        <span class="phrase" data-id="p27-8" data-lang="en">and by the occasional case in which tumors</span> 
+                        <span class="phrase" data-id="p27-9" data-lang="en">that morphologically appear to be MM</span> 
+                        <span class="phrase" data-id="p27-10" data-lang="en">have been documented to arise in WDPMT,</span> 
+                        <span class="phrase" data-id="p27-11" data-lang="en">as described above.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p28-1" data-lang="en">We propose that, in fact, there are two different lesions</span> 
+                        <span class="phrase" data-id="p28-2" data-lang="en">that can look microscopically like WDPMT:</span> 
+                        <span class="phrase" data-id="p28-3" data-lang="en">true (probably benign, at least in the peritoneal cavity) WDPMT,</span> 
+                        <span class="phrase" data-id="p28-4" data-lang="en">and WDPMT-like mesothelioma in situ,</span> 
+                        <span class="phrase" data-id="p28-5" data-lang="en">but it's not possible to separate these entities on routine morphology.</span> 
+                        <span class="phrase" data-id="p28-6" data-lang="en">The relative frequency of these two different lesions is unclear</span> 
+                        <span class="phrase" data-id="p28-7" data-lang="en">and the number of reported cases is too small</span> 
+                        <span class="phrase" data-id="p28-8" data-lang="en">to draw definite conclusions.</span> 
+                        <span class="phrase" data-id="p28-9" data-lang="en">As noted, Lee et al. found 3/8 cases with WDPMT morphology</span> 
+                        <span class="phrase" data-id="p28-10" data-lang="en">that had BAP1 loss by immunochemistry,</span> 
+                        <span class="phrase" data-id="p28-11" data-lang="en">whereas 3 other reports totaling 18 cases</span> 
+                        <span class="phrase" data-id="p28-12" data-lang="en">did not find BAP1 loss,</span> 
+                        <span class="phrase" data-id="p28-13" data-lang="en">although in one series the comment was made</span> 
+                        <span class="phrase" data-id="p28-14" data-lang="en">that BAP1 retention was often patchy in WDPMT;</span> 
+                        <span class="phrase" data-id="p28-15" data-lang="en">this phenomenon can occasionally be seen in mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p28-16" data-lang="en">(Churg A, Galateau-Salle, unpublished data)</span> 
+                        <span class="phrase" data-id="p28-17" data-lang="en">and probably represents spread of a malignant clone.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p29-1" data-lang="en">What is not known at this point is</span> 
+                        <span class="phrase" data-id="p29-2" data-lang="en">what fraction of WDPMT actually represent MIS,</span> 
+                        <span class="phrase" data-id="p29-3" data-lang="en">nor is it known what fraction of MIS look like WDPMT.</span> 
+                        <span class="phrase" data-id="p29-4" data-lang="en">The authors of this article have seen around 30 examples of the latter,</span> 
+                        <span class="phrase" data-id="p29-5" data-lang="en">but because these are consultation cases,</span> 
+                        <span class="phrase" data-id="p29-6" data-lang="en">there is extreme selection bias</span> 
+                        <span class="phrase" data-id="p29-7" data-lang="en">and one can't use these numbers to estimate</span> 
+                        <span class="phrase" data-id="p29-8" data-lang="en">the real frequency of MIS that looks like WDPMT.</span> 
+                        <span class="phrase" data-id="p29-9" data-lang="en">However, it is possible that such lesions</span> 
+                        <span class="phrase" data-id="p29-10" data-lang="en">are more common than anyone realizes</span> 
+                        <span class="phrase" data-id="p29-11" data-lang="en">because the frequently long lead time for MIS</span> 
+                        <span class="phrase" data-id="p29-12" data-lang="en">to develop into invasive mesothelioma</span> 
+                        <span class="phrase" data-id="p29-13" data-lang="en">exceeds the followup time for some fraction of reported patients.</span> 
+                        <span class="phrase" data-id="p29-14" data-lang="en">For example, in the report of Malpica et al.,</span> 
+                        <span class="phrase" data-id="p29-15" data-lang="en">there was only 1 recurrence (incidentally discovered)</span> 
+                        <span class="phrase" data-id="p29-16" data-lang="en">in a series of 25 peritoneal WDPMT,</span> 
+                        <span class="phrase" data-id="p29-17" data-lang="en">but the median followup time was 32 months.</span> 
+                        <span class="phrase" data-id="p29-18" data-lang="en">In the series of Sun et al.</span> 
+                        <span class="phrase" data-id="p29-19" data-lang="en">the median followup time for 46 patients was 29 months</span> 
+                        <span class="phrase" data-id="p29-20" data-lang="en">and the one apparent transformation of WDPMT</span> 
+                        <span class="phrase" data-id="p29-21" data-lang="en">into invasive mesothelioma took 15 years.</span> 
+                        <span class="phrase" data-id="p29-22" data-lang="en">In the 22 patients described by Daya and McCaughey,</span> 
+                        <span class="phrase" data-id="p29-23" data-lang="en">one patient died at 7 years</span> 
+                        <span class="phrase" data-id="p29-24" data-lang="en">with what appears to be diffuse peritoneal tumor by description.</span> 
+                        <span class="phrase" data-id="p29-25" data-lang="en">A number of other individual cases</span> 
+                        <span class="phrase" data-id="p29-26" data-lang="en">with very long times between the diagnosis of WDPMT</span> 
+                        <span class="phrase" data-id="p29-27" data-lang="en">and invasive mesothelioma</span> 
+                        <span class="phrase" data-id="p29-28" data-lang="en">have been listed above in "Significance of invasive foci in WDPMT".</span> 
+                        <span class="phrase" data-id="p29-29" data-lang="en">It is conceivable that, in fact,</span> 
+                        <span class="phrase" data-id="p29-30" data-lang="en">all of the cases reported as WDPMT</span> 
+                        <span class="phrase" data-id="p29-31" data-lang="en">that eventually "turned into" or recurred as invasive mesothelioma</span> 
+                        <span class="phrase" data-id="p29-32" data-lang="en">are really examples of mesothelioma in situ mimicking WDPMT.</span> 
+                        <span class="phrase" data-id="p29-33" data-lang="en">At the moment this idea is speculative</span> 
+                        <span class="phrase" data-id="p29-34" data-lang="en">but is potentially testable using archival material.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p25-1" data-lang="ja">ただ今記述したデータは矛盾する質問を提起する：</span>
+                        <span class="phrase" data-id="p25-2" data-lang="ja">WDPMTは、一般的に無害な所見なのか、</span>
+                        <span class="phrase" data-id="p25-3" data-lang="ja">少なくともそのような腫瘍のほとんどが発生する</span>
+                        <span class="phrase" data-id="p25-4" data-lang="ja">腹膜腔では、</span>
+                        <span class="phrase" data-id="p25-5" data-lang="ja">それとも中皮腫上皮内病変の一形態であり</span>
+                        <span class="phrase" data-id="p25-6" data-lang="ja">浸潤性中皮腫の前駆体なのか？</span>
+                        <span class="phrase" data-id="p25-7" data-lang="ja">WHO女性生殖器腫瘍の書籍は、</span>
+                        <span class="phrase" data-id="p25-8" data-lang="ja">腹膜のWDPMTは良性であり、</span>
+                        <span class="phrase" data-id="p25-9" data-lang="ja">攻撃的な行動は</span>
+                        <span class="phrase" data-id="p25-10" data-lang="ja">MMの見逃された診断を示すと提案している。</span>
+                        <span class="phrase" data-id="p25-11" data-lang="ja">一方、WHO胸部腫瘍の書籍は結論付けている</span>
+                        <span class="phrase" data-id="p25-12" data-lang="ja">ほとんどの胸膜WDPMTは</span>
+                        <span class="phrase" data-id="p25-13" data-lang="ja">緩慢に成長する再発性病変として振る舞うと。</span>
+                        <span class="phrase" data-id="p25-14" data-lang="ja">大きな交絡因子は、多くの場合、</span>
+                        <span class="phrase" data-id="p25-15" data-lang="ja">再発または（最終的に）臨床的に悪性と呼ばれる腫瘍は</span>
+                        <span class="phrase" data-id="p25-16" data-lang="ja">生検されないため、それらがMMであるかどうかは通常記録されていないことである。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p26-1" data-lang="ja">最大シリーズの詳細な追跡調査によれば、</span>
+                        <span class="phrase" data-id="p26-2" data-lang="ja">腹膜腔では、</span>
+                        <span class="phrase" data-id="p26-3" data-lang="ja">WDPMTのように見える腫瘍の大多数は、</span>
+                        <span class="phrase" data-id="p26-4" data-lang="ja">多巣性であっても機能的に良性であるように見える。</span>
+                        <span class="phrase" data-id="p26-5" data-lang="ja">胸膜腔では予後はより慎重であるが、</span>
+                        <span class="phrase" data-id="p26-6" data-lang="ja">上記で詳述したように、</span>
+                        <span class="phrase" data-id="p26-7" data-lang="ja">多くの公表例を見つけることは難しい</span>
+                        <span class="phrase" data-id="p26-8" data-lang="ja">いずれの部位でもWDPMT病変から発生する浸潤性中皮腫の。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p27-1" data-lang="ja">少数かつ腹膜症例のみに基づくゲノム解析ではあるが、</span>
+                        <span class="phrase" data-id="p27-2" data-lang="ja">WDPMTは別個の腫瘍であることを示唆している</span>
+                        <span class="phrase" data-id="p27-3" data-lang="ja">通常のびまん性中皮腫とは関係のない。</span>
+                        <span class="phrase" data-id="p27-4" data-lang="ja">しかし、この考えは反論されている</span>
+                        <span class="phrase" data-id="p27-5" data-lang="ja">免疫化学によるBAP1喪失の観察</span>
+                        <span class="phrase" data-id="p27-6" data-lang="ja">および中皮腫上皮内病変症例におけるBAP1変異/欠失</span>
+                        <span class="phrase" data-id="p27-7" data-lang="ja">形態学的にWDPMTと同一の</span>
+                        <span class="phrase" data-id="p27-8" data-lang="ja">そして腫瘍の散発的な症例によって</span>
+                        <span class="phrase" data-id="p27-9" data-lang="ja">形態学的にMMであるように見える</span>
+                        <span class="phrase" data-id="p27-10" data-lang="ja">WDPMTから発生したことが文書化された、</span>
+                        <span class="phrase" data-id="p27-11" data-lang="ja">上記で説明したように。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p28-1" data-lang="ja">我々は、実際、2つの異なる病変があると提案する</span>
+                        <span class="phrase" data-id="p28-2" data-lang="ja">顕微鏡的にWDPMTのように見える：</span>
+                        <span class="phrase" data-id="p28-3" data-lang="ja">真の（少なくとも腹膜腔では恐らく良性の）WDPMT、</span>
+                        <span class="phrase" data-id="p28-4" data-lang="ja">とWDPMT様の中皮腫上皮内病変、</span>
+                        <span class="phrase" data-id="p28-5" data-lang="ja">しかし、通常の形態学ではこれらの実体を区別することはできない。</span>
+                        <span class="phrase" data-id="p28-6" data-lang="ja">これら2つの異なる病変の相対的頻度は不明であり</span>
+                        <span class="phrase" data-id="p28-7" data-lang="ja">報告された症例数は</span>
+                        <span class="phrase" data-id="p28-8" data-lang="ja">確定的な結論を導くには少なすぎる。</span>
+                        <span class="phrase" data-id="p28-9" data-lang="ja">前述のように、Leeらは免疫化学によってBAP1喪失を持つ</span>
+                        <span class="phrase" data-id="p28-10" data-lang="ja">WDPMT形態の3/8症例を発見した、</span>
+                        <span class="phrase" data-id="p28-11" data-lang="ja">一方、他の3つの報告では合計18例で</span>
+                        <span class="phrase" data-id="p28-12" data-lang="ja">BAP1喪失は見られなかった。</span>
+                        <span class="phrase" data-id="p28-13" data-lang="ja">しかし、1つのシリーズでは、コメントがなされた</span>
+                        <span class="phrase" data-id="p28-14" data-lang="ja">WDPMTではBAP1保持がしばしば斑状であるという。</span>
+                        <span class="phrase" data-id="p28-15" data-lang="ja">この現象は時に中皮腫上皮内病変でも見られることがあり</span>
+                        <span class="phrase" data-id="p28-16" data-lang="ja">（Churg A、Galateau-Salle、未発表データ）</span>
+                        <span class="phrase" data-id="p28-17" data-lang="ja">おそらく悪性クローンの拡散を表している。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p29-1" data-lang="ja">現時点で不明なのは</span>
+                        <span class="phrase" data-id="p29-2" data-lang="ja">WDPMTの何割が実際にMISを表しているのか、</span>
+                        <span class="phrase" data-id="p29-3" data-lang="ja">またMISの何割がWDPMTのように見えるのかということである。</span>
+                        <span class="phrase" data-id="p29-4" data-lang="ja">本論文の著者らは後者の約30例を見てきたが、</span>
+                        <span class="phrase" data-id="p29-5" data-lang="ja">これらは相談症例であるため、</span>
+                        <span class="phrase" data-id="p29-6" data-lang="ja">極端な選択バイアスがあり</span>
+                        <span class="phrase" data-id="p29-7" data-lang="ja">これらの数字を使って推定することはできない</span>
+                        <span class="phrase" data-id="p29-8" data-lang="ja">WDPMTのように見えるMISの実際の頻度を。</span>
+                        <span class="phrase" data-id="p29-9" data-lang="ja">しかし、そのような病変は</span>
+                        <span class="phrase" data-id="p29-10" data-lang="ja">誰もが認識しているよりも一般的である可能性がある</span>
+                        <span class="phrase" data-id="p29-11" data-lang="ja">MISが浸潤性中皮腫に発展するまでの</span>
+                        <span class="phrase" data-id="p29-12" data-lang="ja">頻繁に長いリードタイムが</span>
+                        <span class="phrase" data-id="p29-13" data-lang="ja">報告された患者の一部の追跡時間を超えるため。</span>
+                        <span class="phrase" data-id="p29-14" data-lang="ja">例えば、Malpicaらの報告では、</span>
+                        <span class="phrase" data-id="p29-15" data-lang="ja">再発は1例のみ（偶然発見された）</span>
+                        <span class="phrase" data-id="p29-16" data-lang="ja">25例の腹膜WDPMTのシリーズで、</span>
+                        <span class="phrase" data-id="p29-17" data-lang="ja">中央追跡時間は32ヶ月だった。</span>
+                        <span class="phrase" data-id="p29-18" data-lang="ja">Sunらのシリーズでは</span>
+                        <span class="phrase" data-id="p29-19" data-lang="ja">46人の患者の中央追跡時間は29ヶ月であり</span>
+                        <span class="phrase" data-id="p29-20" data-lang="ja">WDPMTからの明らかな形質転換が</span>
+                        <span class="phrase" data-id="p29-21" data-lang="ja">浸潤性中皮腫へと15年かかった。</span>
+                        <span class="phrase" data-id="p29-22" data-lang="ja">DayaとMcCaugheyによって記述された22人の患者では、</span>
+                        <span class="phrase" data-id="p29-23" data-lang="ja">1人の患者が7年で死亡し</span>
+                        <span class="phrase" data-id="p29-24" data-lang="ja">記述によるとそれはびまん性腹膜腫瘍のようであった。</span>
+                        <span class="phrase" data-id="p29-25" data-lang="ja">他の多くの個別症例は</span>
+                        <span class="phrase" data-id="p29-26" data-lang="ja">WDPMTの診断と浸潤性中皮腫の間に</span>
+                        <span class="phrase" data-id="p29-27" data-lang="ja">非常に長い時間がある</span>
+                        <span class="phrase" data-id="p29-28" data-lang="ja">上記の「WDPMTにおける浸潤巣の意義」で列挙されている。</span>
+                        <span class="phrase" data-id="p29-29" data-lang="ja">実際、次のことが考えられる：</span>
+                        <span class="phrase" data-id="p29-30" data-lang="ja">WDPMTとして報告されたすべての症例のうち、</span>
+                        <span class="phrase" data-id="p29-31" data-lang="ja">最終的に浸潤性中皮腫に「変化した」、または再発したとされるものは、</span>
+                        <span class="phrase" data-id="p29-32" data-lang="ja">実際にはWDPMTを模倣する中皮腫上皮内病変の例である可能性がある。</span>
+                        <span class="phrase" data-id="p29-33" data-lang="ja">現時点でこの考えは推測的だが、</span>
+                        <span class="phrase" data-id="p29-34" data-lang="ja">アーカイブ資料を使用してテスト可能である。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Conclusions: recommendations for diagnosis / 結論：診断のための推奨事項</h2>
+            <div class="bilingual-content">
+                <div class="english">
+                    <p>
+                        <span class="phrase" data-id="p30-1" data-lang="en">Given this situation, we suggest that at a minimum,</span> 
+                        <span class="phrase" data-id="p30-2" data-lang="en">a BAP1 immunostain should be performed</span> 
+                        <span class="phrase" data-id="p30-3" data-lang="en">on any lesion that looks like WDPMT;</span> 
+                        <span class="phrase" data-id="p30-4" data-lang="en">if BAP1 is retained, then MTAP immunohistochemistry</span> 
+                        <span class="phrase" data-id="p30-5" data-lang="en">or CDKN2A FISH should be the next step.</span> 
+                        <span class="phrase" data-id="p30-6" data-lang="en">It should also be remembered that</span> 
+                        <span class="phrase" data-id="p30-7" data-lang="en">the combination of BAP1/MTAP/CDKN2A investigation</span> 
+                        <span class="phrase" data-id="p30-8" data-lang="en">will not detect all invasive mesotheliomas</span> 
+                        <span class="phrase" data-id="p30-9" data-lang="en">and the same conclusion presumably applies to mesothelioma in situ,</span> 
+                        <span class="phrase" data-id="p30-10" data-lang="en">particularly since the sensitivity of CDKN2A FISH</span> 
+                        <span class="phrase" data-id="p30-11" data-lang="en">(and by implication MTAP immunochemistry)</span> 
+                        <span class="phrase" data-id="p30-12" data-lang="en">is known to be fairly low in the peritoneal cavity.</span> 
+                        <span class="phrase" data-id="p30-13" data-lang="en">A potentially helpful finding is that</span> 
+                        <span class="phrase" data-id="p30-14" data-lang="en">all the MIS cases we have seen that look like WDPMT</span> 
+                        <span class="phrase" data-id="p30-15" data-lang="en">also have flat mesothelioma in situ</span> 
+                        <span class="phrase" data-id="p30-16" data-lang="en">which usually looks like a single layer</span> 
+                        <span class="phrase" data-id="p30-17" data-lang="en">of bland cuboidal mesothelial cells (see Fig. 4C);</span> 
+                        <span class="phrase" data-id="p30-18" data-lang="en">however, benign reactions can also look like</span> 
+                        <span class="phrase" data-id="p30-19" data-lang="en">a single layer of bland cuboidal mesothelial cells,</span> 
+                        <span class="phrase" data-id="p30-20" data-lang="en">so appropriate immunohistochemical or FISH detection is still required.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p31-1" data-lang="en">This approach may appear to be overkill,</span> 
+                        <span class="phrase" data-id="p31-2" data-lang="en">but even if MIS constitutes only a few percent</span> 
+                        <span class="phrase" data-id="p31-3" data-lang="en">of lesions that look like WDPMT,</span> 
+                        <span class="phrase" data-id="p31-4" data-lang="en">MIS probably requires aggressive therapy</span> 
+                        <span class="phrase" data-id="p31-5" data-lang="en">before it becomes invasive.</span> 
+                        <span class="phrase" data-id="p31-6" data-lang="en">On the other hand, truly benign WDPMT</span> 
+                        <span class="phrase" data-id="p31-7" data-lang="en">probably requires no therapy at all</span> 
+                        <span class="phrase" data-id="p31-8" data-lang="en">beyond just local excision,</span> 
+                        <span class="phrase" data-id="p31-9" data-lang="en">and in fact, radical therapy for such tumors</span> 
+                        <span class="phrase" data-id="p31-10" data-lang="en">is often associated with adverse outcomes.</span> 
+                        <span class="phrase" data-id="p31-11" data-lang="en">What we suggest, when dealing with a lesion</span> 
+                        <span class="phrase" data-id="p31-12" data-lang="en">that looks like WDPMT and has retained BAP1</span> 
+                        <span class="phrase" data-id="p31-13" data-lang="en">and retained MTAP or no CDKN2A deletion,</span> 
+                        <span class="phrase" data-id="p31-14" data-lang="en">is that the case be signed out as WDPMT.</span> 
+                        <span class="phrase" data-id="p31-15" data-lang="en">However, a comment should be added that in all likelihood</span> 
+                        <span class="phrase" data-id="p31-16" data-lang="en">the lesion is benign and requires no further therapy,</span> 
+                        <span class="phrase" data-id="p31-17" data-lang="en">but followup is warranted because</span> 
+                        <span class="phrase" data-id="p31-18" data-lang="en">there is a small risk that such lesions</span> 
+                        <span class="phrase" data-id="p31-19" data-lang="en">still could represent MIS.</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p32-1" data-lang="en">The significance of stalk invasion</span> 
+                        <span class="phrase" data-id="p32-2" data-lang="en">that originates in a WDPMT</span> 
+                        <span class="phrase" data-id="p32-3" data-lang="en">remains unclear and is not necessarily an adverse finding,</span> 
+                        <span class="phrase" data-id="p32-4" data-lang="en">but in such cases BAP1/MTAP/CDKN2A FISH analysis is crucial.</span> 
+                        <span class="phrase" data-id="p32-5" data-lang="en">Even if this analysis is negative,</span> 
+                        <span class="phrase" data-id="p32-6" data-lang="en">a statement that patients with WDPMT with invasion</span> 
+                        <span class="phrase" data-id="p32-7" data-lang="en">should be carefully followed</span> 
+                        <span class="phrase" data-id="p32-8" data-lang="en">would probably be appropriate in a surgical pathology report.</span>
+                    </p>
+                </div>
+                <div class="japanese">
+                    <p>
+                        <span class="phrase" data-id="p30-1" data-lang="ja">この状況を考えると、我々は少なくとも、</span>
+                        <span class="phrase" data-id="p30-2" data-lang="ja">BAP1免疫染色を実施すべきだと</span>
+                        <span class="phrase" data-id="p30-3" data-lang="ja">WDPMTのように見える病変に対して提案する。</span>
+                        <span class="phrase" data-id="p30-4" data-lang="ja">BAP1が保持されている場合、次のステップは</span>
+                        <span class="phrase" data-id="p30-5" data-lang="ja">MTAP免疫組織化学またはCDKN2A FISHであるべきである。</span>
+                        <span class="phrase" data-id="p30-6" data-lang="ja">また、覚えておくべきことは</span>
+                        <span class="phrase" data-id="p30-7" data-lang="ja">BAP1/MTAP/CDKN2A調査の組み合わせが</span>
+                        <span class="phrase" data-id="p30-8" data-lang="ja">すべての浸潤性中皮腫を検出するわけではないことも</span>
+                        <span class="phrase" data-id="p30-9" data-lang="ja">同じ結論が中皮腫上皮内病変にも当てはまると推測される、</span>
+                        <span class="phrase" data-id="p30-10" data-lang="ja">特に腹膜腔におけるCDKN2A FISHの感度が</span>
+                        <span class="phrase" data-id="p30-11" data-lang="ja">（および暗示的にMTAP免疫化学）</span>
+                        <span class="phrase" data-id="p30-12" data-lang="ja">かなり低いことが知られているため。</span>
+                        <span class="phrase" data-id="p30-13" data-lang="ja">潜在的に役立つ所見は、</span>
+                        <span class="phrase" data-id="p30-14" data-lang="ja">我々が見てきたWDPMTのように見えるすべてのMIS症例は、</span>
+                        <span class="phrase" data-id="p30-15" data-lang="ja">平坦な中皮腫上皮内病変も持っているということで、</span>
+                        <span class="phrase" data-id="p30-16" data-lang="ja">これは通常、単層のように見える</span>
+                        <span class="phrase" data-id="p30-17" data-lang="ja">単調な立方体状中皮細胞の（図4C参照）。</span>
+                        <span class="phrase" data-id="p30-18" data-lang="ja">しかし、良性反応も見える場合がある</span>
+                        <span class="phrase" data-id="p30-19" data-lang="ja">単調な立方体状中皮細胞の単層のように、</span>
+                        <span class="phrase" data-id="p30-20" data-lang="ja">そのため、適切な免疫組織化学的またはFISH検出はまだ必要である。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p31-1" data-lang="ja">このアプローチは過剰に見えるかもしれないが、</span>
+                        <span class="phrase" data-id="p31-2" data-lang="ja">MISがわずか数パーセントを構成するだけだとしても</span>
+                        <span class="phrase" data-id="p31-3" data-lang="ja">WDPMTのように見える病変の、</span>
+                        <span class="phrase" data-id="p31-4" data-lang="ja">MISは浸潤性になる前に</span>
+                        <span class="phrase" data-id="p31-5" data-lang="ja">積極的な治療を必要とする可能性がある。</span>
+                        <span class="phrase" data-id="p31-6" data-lang="ja">一方、真に良性のWDPMTは</span>
+                        <span class="phrase" data-id="p31-7" data-lang="ja">おそらく治療をまったく必要としない</span>
+                        <span class="phrase" data-id="p31-8" data-lang="ja">局所切除以外の。</span>
+                        <span class="phrase" data-id="p31-9" data-lang="ja">実際、そのような腫瘍に対する根治的治療は</span>
+                        <span class="phrase" data-id="p31-10" data-lang="ja">しばしば有害な結果と関連している。</span>
+                        <span class="phrase" data-id="p31-11" data-lang="ja">我々が提案するのは、病変を扱う場合、</span>
+                        <span class="phrase" data-id="p31-12" data-lang="ja">WDPMTのように見え、BAP1が保持され、</span>
+                        <span class="phrase" data-id="p31-13" data-lang="ja">MTAPが保持されているか、CDKN2A欠失がない、</span>
+                        <span class="phrase" data-id="p31-14" data-lang="ja">症例をWDPMTとして報告することである。</span>
+                        <span class="phrase" data-id="p31-15" data-lang="ja">しかし、おそらく病変は良性であり、</span>
+                        <span class="phrase" data-id="p31-16" data-lang="ja">さらなる治療は必要ないが、</span>
+                        <span class="phrase" data-id="p31-17" data-lang="ja">追跡調査が必要であるというコメントを追加すべきである</span>
+                        <span class="phrase" data-id="p31-18" data-lang="ja">そのような病変がまだ</span>
+                        <span class="phrase" data-id="p31-19" data-lang="ja">MISを表す可能性が小さいため。</span>
+                    </p>
+                    <p>
+                        <span class="phrase" data-id="p32-1" data-lang="ja">WDPMTから発生する</span>
+                        <span class="phrase" data-id="p32-2" data-lang="ja">茎浸潤の意義は</span>
+                        <span class="phrase" data-id="p32-3" data-lang="ja">依然として不明であり、必ずしも不利な所見ではないが、</span>
+                        <span class="phrase" data-id="p32-4" data-lang="ja">そのような症例ではBAP1/MTAP/CDKN2A FISH分析が極めて重要である。</span>
+                        <span class="phrase" data-id="p32-5" data-lang="ja">この分析が陰性であっても、</span>
+                        <span class="phrase" data-id="p32-6" data-lang="ja">浸潤を伴うWDPMTを持つ患者は</span>
+                        <span class="phrase" data-id="p32-7" data-lang="ja">慎重に追跡すべきであるという声明は、</span>
+                        <span class="phrase" data-id="p32-8" data-lang="ja">外科病理報告書において適切であろう。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
